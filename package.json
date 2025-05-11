@@ -1,0 +1,27 @@
+{
+  "name": "startup-india-service-point",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DataWizard1631/startup-india-service-point.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DataWizard1631/startup-india-service-point/issues"
+  },
+  "homepage": "https://github.com/DataWizard1631/startup-india-service-point#readme",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cheerio": "^1.0.0",
+    "cron": "^4.3.0",
+    "fs-extra": "^11.3.0",
+    "puppeteer": "^24.8.2"
+  }
+}

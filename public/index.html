@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup India Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-rocket"></i> Startup India Data Dashboard</h1>
+      <div class="tabs">
+        <button id="tab-hackathons" class="tab active">Hackathons</button>
+        <button id="tab-schemes" class="tab">Schemes</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="controls">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search...">
+          <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="filter-container">
+          <select id="filter-select">
+            <option value="all">All</option>
+            <option value="date">Date (Recent First)</option>
+            <option value="title">Title (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="hackathons-container" class="data-container active">
+        <div class="loading">
+          <i class="fas fa-circle-notch fa-spin"></i>
+          <p>Loading hackathons...</p>
+        </div>
+        <div class="cards-grid" id="hackathons-grid"></div>
+      </div>
+
+      <div id="schemes-container" class="data-container">
+        <div class="loading">
+          <i class="fas fa-circle-notch fa-spin"></i>
+          <p>Loading schemes...</p>
+        </div>
+        <div class="cards-grid" id="schemes-grid"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Data Ingestion Service Dashboard &copy; 2025</p>
+      <p>
+        <small>Last updated: <span id="last-updated"></span></small>
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
