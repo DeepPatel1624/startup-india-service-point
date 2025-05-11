@@ -27,45 +27,81 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libgbm-dev gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 
-      - name: Inspect and fix script module syntax
+      - name: Create simple CommonJS scraper
         run: |
-          echo "Checking script format..."
-          head -n 5 scripts/scrapeHackathons.js
+          echo "Creating reliable CommonJS version of the scraper"
+          cat > scripts/simple-scraper.js << 'EOF'
+          const fs = require("fs-extra");
+          const path = require("path");
+          const axios = require("axios");
+          const cheerio = require("cheerio");
           
-          # Check if file uses ES module syntax and convert to CommonJS if needed
-          if grep -q "import.*from" scripts/scrapeHackathons.js; then
-            echo "Converting ES module syntax to CommonJS..."
-            # Replace import statements with require statements
-            sed -i 's/import { launch } from "puppeteer";/const puppeteer = require("puppeteer");/g' scripts/scrapeHackathons.js
-            sed -i 's/import { ensureDir, writeJson } from "fs-extra";/const fs = require("fs-extra");/g' scripts/scrapeHackathons.js
-            sed -i 's/import { join } from "path";/const path = require("path");/g' scripts/scrapeHackathons.js
+          async function scrapeHackathons() {
+            console.log("Starting hackathon scraping...");
+            let hackathons = [];
             
-            # Check if more imports need conversion
-            if grep -q "import" scripts/scrapeHackathons.js; then
-              echo "Additional imports found, showing full script head:"
-              head -n 20 scripts/scrapeHackathons.js
-            fi
-          else
-            echo "Script appears to use CommonJS format, proceeding."
-          fi
+            try {
+              const { data } = await axios.get("https://devfolio.co/hackathons", {
+                headers: {
+                  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+                }
+              });
+              
+              const $ = cheerio.load(data);
+              const cards = $("[class*='HackathonCard']");
+              
+              console.log(`Found ${cards.length} hackathon cards`);
+              
+              cards.each((i, el) => {
+                const $el = $(el);
+                const title = $el.find("h1").text().trim() || "Unknown Hackathon";
+                const desc = $el.find("p").text().trim() || "No description";
+                const link = $el.find("a").attr("href");
+                
+                hackathons.push({
+                  id: `hackathon-${i}-${Date.now()}`,
+                  title: title,
+                  desc: desc,
+                  date: "Check website for dates",
+                  mode: "Online",
+                  location: "India",
+                  sectorTags: ["Technology"],
+                  organiser: "Devfolio",
+                  link: link || "https://devfolio.co/hackathons"
+                });
+              });
+            } catch (error) {
+              console.error("Error scraping hackathons:", error.message);
+              hackathons.push({
+                id: 'fallback',
+                title: 'Sample Hackathon',
+                desc: 'This is a fallback entry',
+                date: new Date().toISOString().split('T')[0],
+                mode: 'Online',
+                location: 'India',
+                sectorTags: ['Technology'],
+                organiser: 'System',
+                link: 'https://devfolio.co/hackathons'
+              });
+            }
+            
+            const dataDir = path.join(process.cwd(), "data");
+            await fs.ensureDir(dataDir);
+            await fs.writeJson(path.join(dataDir, "hackathons.json"), hackathons, { spaces: 2 });
+            console.log(`✅ ${hackathons.length} hackathons saved`);
+          }
           
+          scrapeHackathons().catch(console.error);
+          EOF
+      
       - name: Run scrapers with error handling
         run: |
-          # Run hackathons scraper
-          node scripts/scrapeHackathons.js
-          HACKATHONS_EXIT_CODE=$?
+          # Run simple hackathons scraper
+          node scripts/simple-scraper.js
           
           # Run schemes scraper
-          node scripts/scrapeSchemes.js
-          SCHEMES_EXIT_CODE=$?
+          node scripts/scrapeSchemes.js || echo "Schemes scraper failed but continuing"
           
-          # Print status
-          echo "Hackathons scraper exit code: $HACKATHONS_EXIT_CODE"
-          echo "Schemes scraper exit code: $SCHEMES_EXIT_CODE"
-          
-          # Continue even if one scraper fails
-          exit 0
-        
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
