@@ -146,8 +146,9 @@ async function scrapeDevfolioWithPuppeteer() {
       timeout: 60000
     });
     
-    // Instead of waiting for a specific selector, wait for a reasonable time
-    await page.waitForTimeout(5000);
+    // Instead of using waitForTimeout which may not be available in all Puppeteer versions,
+    // use a promise-based delay function that works everywhere
+    await new Promise(resolve => setTimeout(resolve, 5000));
     
     // Take a screenshot for debugging
     const screenshotPath = path.join(process.cwd(), "debug-screenshot.png");
