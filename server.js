@@ -43,8 +43,13 @@ app.get('/api/schemes', async (req, res) => {
 });
 
 // Serve the dashboard for any other route
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Handle all other routes
+app.use((req, res) => {
+  res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
