@@ -1,11 +1,11 @@
-const puppeteer = require("puppeteer");
-const fs = require("fs-extra");
-const path = require("path");
+import { launch } from "puppeteer";
+import { ensureDir, writeJson } from "fs-extra";
+import { join } from "path";
 
 const URL = "https://devfolio.co/hackathons";
 
 async function scrapeDevfolioHackathons() {
-  const browser = await puppeteer.launch();
+  const browser = await launch();
   const page = await browser.newPage();
   await page.goto(URL, { waitUntil: "networkidle2" });
   await page.waitForSelector("main");
@@ -26,9 +26,9 @@ async function scrapeDevfolioHackathons() {
 
   await browser.close();
 
-  const dataDir = path.join(process.cwd(), "data");
-  await fs.ensureDir(dataDir);
-  await fs.writeJson(path.join(dataDir, "hackathons.json"), hackathons, { spaces: 2 });
+  const dataDir = join(process.cwd(), "data");
+  await ensureDir(dataDir);
+  await writeJson(join(dataDir, "hackathons.json"), hackathons, { spaces: 2 });
   console.log(`✅ ${hackathons.length} hackathons saved.`);
 }
 

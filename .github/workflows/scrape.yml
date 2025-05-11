@@ -1,7 +1,7 @@
 name: Scheduled Scrape
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Run every 5 minutes
+    - cron: '*/1 * * * *'  # Run every 1 minutes
   workflow_dispatch:
 jobs:
   scrape:
