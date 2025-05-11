@@ -6,6 +6,7 @@
   <title>Startup India Dashboard</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="container">
@@ -14,6 +15,7 @@
       <div class="tabs">
         <button id="tab-hackathons" class="tab active">Hackathons</button>
         <button id="tab-schemes" class="tab">Schemes</button>
+        <button id="tab-stats" class="tab">Statistics</button>
       </div>
     </header>
 
@@ -46,6 +48,58 @@
           <p>Loading schemes...</p>
         </div>
         <div class="cards-grid" id="schemes-grid"></div>
+      </div>
+      
+      <div id="stats-container" class="data-container">
+        <div class="loading">
+          <i class="fas fa-circle-notch fa-spin"></i>
+          <p>Loading statistics...</p>
+        </div>
+        <div class="stats-dashboard">
+          <div class="stats-overview">
+            <div class="stat-card">
+              <h3>Total Scrapes</h3>
+              <div class="stat-value" id="stat-total-scrapes">0</div>
+            </div>
+            <div class="stat-card">
+              <h3>Successful Scrapes</h3>
+              <div class="stat-value" id="stat-successful-scrapes">0</div>
+            </div>
+            <div class="stat-card">
+              <h3>Failed Scrapes</h3>
+              <div class="stat-value" id="stat-failed-scrapes">0</div>
+            </div>
+            <div class="stat-card">
+              <h3>Last Scrape</h3>
+              <div class="stat-value" id="stat-last-scrape">Never</div>
+            </div>
+          </div>
+          
+          <div class="stats-chart-container">
+            <h3>Hackathons Found Over Time</h3>
+            <canvas id="hackathons-chart"></canvas>
+          </div>
+          
+          <div class="stats-history">
+            <h3>Recent Scrapes</h3>
+            <div class="stats-table-container">
+              <table id="scrape-history-table" class="stats-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Total</th>
+                    <th>Devfolio</th>
+                    <th>Devpost</th>
+                    <th>Other</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be populated by JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 

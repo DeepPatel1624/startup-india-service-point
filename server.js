@@ -42,6 +42,23 @@ app.get('/api/schemes', async (req, res) => {
   }
 });
 
+// API endpoint to get scrape statistics
+app.get('/api/stats', async (req, res) => {
+  try {
+    const statsPath = path.join(__dirname, 'data', 'scrape-stats.json');
+    const exists = await fs.pathExists(statsPath);
+    
+    if (exists) {
+      const stats = await fs.readJson(statsPath);
+      res.json(stats);
+    } else {
+      res.status(404).json({ error: 'Scrape statistics not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to load scrape statistics' });
+  }
+});
+
 // Serve the dashboard for any other route
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
