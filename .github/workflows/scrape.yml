@@ -335,11 +335,22 @@ jobs:
           # Create data directory if it doesn't exist
           mkdir -p data
           
+          # Explicitly avoid running the original scrapers that use ES module syntax
+          echo "Temporarily renaming original scraper files to prevent them from being run..."
+          [ -f scripts/scrapeHackathons.js ] && mv scripts/scrapeHackathons.js scripts/scrapeHackathons.js.bak
+          [ -f scripts/scrapeSchemes.js ] && mv scripts/scrapeSchemes.js scripts/scrapeSchemes.js.bak
+          
           # Run GitHub-specific hackathons scraper
+          echo "Running GitHub-specific hackathons scraper..."
           node scripts/github-hackathons.js || echo "Hackathons scraper failed but continuing workflow"
           
           # Run GitHub-specific schemes scraper
+          echo "Running GitHub-specific schemes scraper..."
           node scripts/github-schemes.js || echo "Schemes scraper failed but continuing workflow"
+          
+          # Restore original files
+          [ -f scripts/scrapeHackathons.js.bak ] && mv scripts/scrapeHackathons.js.bak scripts/scrapeHackathons.js
+          [ -f scripts/scrapeSchemes.js.bak ] && mv scripts/scrapeSchemes.js.bak scripts/scrapeSchemes.js
           
           # List scraped data files
           echo "Contents of data directory:"
