@@ -33,7 +33,8 @@ jobs:
             libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 \
             libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation \
             libnss3 lsb-release xdg-utils wget \
-            libgconf-2-4 libappindicator3-1
+            libgconf-2-4 libappindicator3-1 \
+            chromium-browser
 
       - name: Create GitHub-specific scrapers
         run: |
