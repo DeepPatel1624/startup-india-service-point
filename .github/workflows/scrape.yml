@@ -1,7 +1,7 @@
 name: Scheduled Scrape
 on:
   schedule:
-    - cron: '0 10 * * *'  # Run every 15 minutes to avoid rate limits
+    - cron: "0 10 * * *" # Run every 15 minutes to avoid rate limits
   workflow_dispatch:
 
 jobs:
@@ -11,17 +11,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch all history for proper git operations
+          fetch-depth: 0 # Fetch all history for proper git operations
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm'
-      
+          node-version: "18"
+          cache: "npm"
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Install Puppeteer dependencies on Ubuntu 24.04
         run: |
           sudo apt-get update
@@ -34,11 +34,11 @@ jobs:
             libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation \
             libnss3 lsb-release xdg-utils wget \
             libgconf-2-4 libappindicator3-1
-        
+
       - name: Create GitHub-specific scrapers
         run: |
           echo "Creating GitHub-specific scrapers for reliable execution"
-          
+
           # Create hackathons scraper for GitHub Actions
           cat > scripts/github-hackathons.js << 'EOF'
           const fs = require("fs-extra");
@@ -46,13 +46,13 @@ jobs:
           const axios = require("axios");
           const cheerio = require("cheerio");
           const puppeteer = require("puppeteer");
-          
+
           // Sources for hackathon data
           const SOURCES = [
             { name: "Devfolio", url: "https://devfolio.co/hackathons" },
             { name: "Devpost", url: "https://devpost.com/hackathons" }
           ];
-          
+
           async function scrapeHackathons() {
             console.log("🔍 Starting hackathon scraping from multiple sources");
             const allHackathons = [];
@@ -206,23 +206,23 @@ jobs:
               throw saveError;
             }
           }
-          
+
           // Execute the scraper
           scrapeHackathons().catch(error => {
             console.error('Fatal error during scraping:', error);
             process.exit(1); // Exit with error code but GitHub Actions will continue
           });
           EOF
-          
+
           # Create schemes scraper for GitHub Actions
           cat > scripts/github-schemes.js << 'EOF'
           const axios = require("axios");
           const cheerio = require("cheerio");
           const fs = require("fs-extra");
           const path = require("path");
-          
+
           const URL = "https://www.startupindia.gov.in/content/sih/en/startup-schemes.html";
-          
+
           async function scrapeSchemes() {
             console.log("Starting schemes scraping...");
             const schemes = [];
@@ -325,47 +325,47 @@ jobs:
               throw saveError;
             }
           }
-          
+
           scrapeSchemes().catch(error => {
             console.error('Fatal error during scheme scraping:', error);
             process.exit(1); // Exit with error code but GitHub Actions will continue
           });
           EOF
-      
+
       - name: Run GitHub-specific scrapers with error handling
         run: |
           echo "Running GitHub-optimized scrapers..."
-          
+
           # Create data directory if it doesn't exist
           mkdir -p data
-          
+
           # Explicitly avoid running the original scrapers that use ES module syntax
           echo "Temporarily renaming original scraper files to prevent them from being run..."
           [ -f scripts/scrapeHackathons.js ] && mv scripts/scrapeHackathons.js scripts/scrapeHackathons.js.bak
           [ -f scripts/scrapeSchemes.js ] && mv scripts/scrapeSchemes.js scripts/scrapeSchemes.js.bak
-          
+
           # Run GitHub-specific hackathons scraper
           echo "Running GitHub-specific hackathons scraper..."
           node scripts/github-hackathons.js || echo "Hackathons scraper failed but continuing workflow"
-          
+
           # Run GitHub-specific schemes scraper
           echo "Running GitHub-specific schemes scraper..."
           node scripts/github-schemes.js || echo "Schemes scraper failed but continuing workflow"
-          
+
           # Restore original files
           [ -f scripts/scrapeHackathons.js.bak ] && mv scripts/scrapeHackathons.js.bak scripts/scrapeHackathons.js
           [ -f scripts/scrapeSchemes.js.bak ] && mv scripts/scrapeSchemes.js.bak scripts/scrapeSchemes.js
-          
+
           # List scraped data files
           echo "Contents of data directory:"
           ls -la data/
-          
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          
+
           # Check if there are any changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
