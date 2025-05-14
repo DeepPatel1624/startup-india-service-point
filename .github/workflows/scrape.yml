@@ -1,363 +1,41 @@
 name: Scheduled Scrape
+
 on:
   schedule:
-    - cron: "*/6 * * * *" # Run every 15 minutes
-  workflow_dispatch:
+    - cron: '0/6 * * * *'      # runs daily at 02:00 UTC
+  workflow_dispatch:         # allows manual trigger
 
 jobs:
   scrape:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Fetch all history for proper git operations
+          fetch-depth: 0      # fetch full history for git commits
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
-          cache: "npm"
+          node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Create GitHub-specific scrapers
-        run: |
-          echo "Creating GitHub-specific scrapers for reliable execution"
+      - name: Run hackathons scraper
+        run: node scripts/scrapeHackathons.js
 
-          # Create hackathons scraper for GitHub Actions
-          cat > scripts/github-hackathons.js << 'EOF'
-          const fs = require("fs-extra");
-          const path = require("path");
-          const axios = require("axios");
-          const cheerio = require("cheerio");
+      - name: Run schemes scraper
+        run: node scripts/scrapeSchemes.js
 
-          // Sources for hackathon data
-          const SOURCES = [
-            { name: "Devfolio", url: "https://devfolio.co/hackathons" },
-            { name: "Devpost", url: "https://devpost.com/hackathons" }
-          ];
-
-          async function scrapeHackathons() {
-            console.log("🔍 Starting hackathon scraping from multiple sources");
-            const allHackathons = [];
-            let successfulSources = 0;
-            
-            // Load or initialize scrape statistics
-            const statsPath = path.join(process.cwd(), "data", "scrape-stats.json");
-            let stats = {
-              totalScrapes: 0,
-              lastScrapeTime: null,
-              successfulScrapes: 0,
-              failedScrapes: 0,
-              hackathonsCounts: []
-            };
-
-            try {
-              if (await fs.pathExists(statsPath)) {
-                stats = await fs.readJson(statsPath);
-                console.log(`Loaded existing stats: Total scrapes so far: ${stats.totalScrapes}`);
-              }
-            } catch (error) {
-              console.error('Error reading scrape stats:', error.message);
-            }
-            
-            // Update scrape counter and timestamp
-            stats.totalScrapes++;
-            stats.lastScrapeTime = new Date().toISOString();
-            console.log(`This is scrape #${stats.totalScrapes} since tracking began`);
-            
-            // Try each source with a separate try/catch block
-            for (const source of SOURCES) {
-              try {
-                console.log(`Attempting to scrape ${source.name} from ${source.url}...`);
-                const { data } = await axios.get(source.url, {
-                  headers: {
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
-                  },
-                  timeout: 30000 // 30 second timeout
-                });
-                
-                const $ = cheerio.load(data);
-                
-                // Different selector strategies based on the source
-                let selector = '';
-                if (source.name === 'Devfolio') {
-                  // Try multiple potential selectors for Devfolio
-                  selector = '[class*="HackathonCard"], [class*="hackathon-card"], article, .card';
-                } else if (source.name === 'Devpost') {
-                  // Devpost selectors
-                  selector = '.hackathon-card, article, .challenge-listing, .challenge';
-                }
-                
-                const elements = $(selector);
-                console.log(`Found ${elements.length} potential hackathon elements on ${source.name}`);
-                
-                if (elements.length > 0) {
-                  elements.each((i, el) => {
-                    const $el = $(el);
-                    
-                    // Extract with multiple fallback strategies
-                    const title = $el.find('h1, h2, h3, .title, [class*="title"], [class*="Title"]').first().text().trim() ||
-                               $el.find('strong, b').first().text().trim() ||
-                               `${source.name} Hackathon ${i+1}`;
-                    
-                    const desc = $el.find('p, .description, [class*="description"], [class*="Description"]').first().text().trim() ||
-                              "Visit website for more details";
-                    
-                    const linkEl = $el.is('a') ? $el : $el.find('a').first();
-                    const link = linkEl.attr('href') ? 
-                              (linkEl.attr('href').startsWith('http') ? linkEl.attr('href') : `${new URL(source.url).origin}${linkEl.attr('href')}`) :
-                              source.url;
-                    
-                    if (title && title !== `${source.name} Hackathon ${i+1}` && !title.includes('undefined')) {
-                      allHackathons.push({
-                        id: `${source.name.toLowerCase()}-${i}-${Date.now()}`,
-                        title: title,
-                        desc: desc,
-                        date: "Check website for dates",
-                        mode: "Online",
-                        location: "Global",
-                        sectorTags: ["Technology"],
-                        organiser: source.name,
-                        link: link
-                      });
-                    }
-                  });
-                  
-                  if (elements.length > 0) {
-                    successfulSources++;
-                    console.log(`Successfully scraped ${source.name}: Found ${elements.length} elements`);
-                  }
-                }
-              } catch (error) {
-                console.error(`Error scraping ${source.name}:`, error.message);
-              }
-            }
-            
-            // If we couldn't scrape anything, add fallback data
-            if (allHackathons.length === 0) {
-              console.log('No hackathons found from any source. Adding placeholder data.');
-              allHackathons.push({
-                id: `fallback-${Date.now()}`,
-                title: 'Sample Hackathon',
-                desc: 'This is a placeholder entry because no hackathons were found during scraping.',
-                date: new Date().toISOString().split('T')[0],
-                mode: 'Online',
-                location: 'Global',
-                sectorTags: ['Technology'],
-                organiser: 'System',
-                link: 'https://devfolio.co/hackathons'
-              });
-            }
-            
-            // Save hackathons data
-            try {
-              const dataDir = path.join(process.cwd(), "data");
-              await fs.ensureDir(dataDir);
-              const filePath = path.join(dataDir, "hackathons.json");
-              await fs.writeJson(filePath, allHackathons, { spaces: 2 });
-              console.log(`✅ ${allHackathons.length} hackathons saved to ${filePath}`);
-              
-              // Update statistics
-              if (successfulSources > 0) {
-                stats.successfulScrapes++;
-              } else {
-                stats.failedScrapes++;
-              }
-              
-              // Add this scrape's data to history
-              stats.hackathonsCounts.push({
-                timestamp: stats.lastScrapeTime,
-                count: allHackathons.length,
-                sources: SOURCES.reduce((acc, source) => {
-                  acc[source.name.toLowerCase()] = allHackathons.filter(h => h.organiser === source.name).length;
-                  return acc;
-                }, {})
-              });
-              
-              // Limit history to last 100 entries
-              if (stats.hackathonsCounts.length > 100) {
-                stats.hackathonsCounts = stats.hackathonsCounts.slice(-100);
-              }
-              
-              // Save stats
-              await fs.writeJson(statsPath, stats, { spaces: 2 });
-              console.log(`📊 Scrape statistics updated. Success rate: ${stats.successfulScrapes}/${stats.totalScrapes}`);
-              
-              return allHackathons;
-            } catch (saveError) {
-              console.error('Error saving data:', saveError.message);
-              throw saveError;
-            }
-          }
-
-          // Execute the scraper
-          scrapeHackathons().catch(error => {
-            console.error('Fatal error during scraping:', error);
-            process.exit(1); // Exit with error code but GitHub Actions will continue
-          });
-          EOF
-
-          # Create schemes scraper for GitHub Actions
-          cat > scripts/github-schemes.js << 'EOF'
-          const axios = require("axios");
-          const cheerio = require("cheerio");
-          const fs = require("fs-extra");
-          const path = require("path");
-
-          const URL = "https://www.startupindia.gov.in/content/sih/en/startup-schemes.html";
-
-          async function scrapeSchemes() {
-            console.log("Starting schemes scraping...");
-            const schemes = [];
-            
-            try {
-              const { data } = await axios.get(URL, {
-                headers: {
-                  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
-                },
-                timeout: 30000 // 30 second timeout
-              });
-              
-              const $ = cheerio.load(data);
-              
-              // Try multiple selectors that might match scheme cards
-              const selectors = [
-                '.feature-card',
-                '[class*="scheme"]',
-                '[class*="card"]',
-                'article'
-              ];
-              
-              let foundElements = false;
-              
-              // Try each selector until we find matching elements
-              for (const selector of selectors) {
-                const elements = $(selector);
-                console.log(`Selector '${selector}' found ${elements.length} elements`);
-                
-                if (elements.length > 0) {
-                  foundElements = true;
-                  
-                  elements.each((i, el) => {
-                    const $el = $(el);
-                    const title = $el.find('h2, h3, h4, .title, [class*="title"]').first().text().trim() || `Scheme ${i+1}`;
-                    const desc = $el.find('p, .description, [class*="description"]').first().text().trim() || "Visit website for details";
-                    const linkEl = $el.is('a') ? $el : $el.find('a').first();
-                    const link = linkEl.attr('href') ? 
-                              (linkEl.attr('href').startsWith('http') ? linkEl.attr('href') : `https://www.startupindia.gov.in${linkEl.attr('href')}`) :
-                              URL;
-                    
-                    if (title && title !== `Scheme ${i+1}` && !title.includes('undefined')) {
-                      schemes.push({
-                        id: title.replace(/\s+/g, '-').toLowerCase() || `scheme-${i}`,
-                        title: title,
-                        desc: desc,
-                        eligibility: "Check website for eligibility details",
-                        deadline: "Check website for deadline",
-                        sectorTags: ["Startup"],
-                        region: 'All-India',
-                        organiser: 'Startup India',
-                        link: link
-                      });
-                    }
-                  });
-                  
-                  // If we found schemes with this selector, break the loop
-                  if (schemes.length > 0) {
-                    break;
-                  }
-                }
-              }
-              
-              if (!foundElements || schemes.length === 0) {
-                console.log("Could not find any matching scheme elements, adding fallback data");
-                schemes.push({
-                  id: 'fallback-scheme',
-                  title: 'Startup India Seed Fund Scheme',
-                  desc: 'This is a fallback entry. The Startup India Seed Fund Scheme aims to provide financial assistance to startups for proof of concept, prototype development, product trials, market entry, and commercialization.',
-                  eligibility: "Check website for eligibility details",
-                  deadline: "Check website for deadline",
-                  sectorTags: ["Startup"],
-                  region: 'All-India',
-                  organiser: 'Startup India',
-                  link: URL
-                });
-              }
-            } catch (error) {
-              console.error('Error scraping schemes:', error.message);
-              schemes.push({
-                id: 'fallback-scheme',
-                title: 'Startup India Seed Fund Scheme',
-                desc: 'This is a fallback entry. The Startup India Seed Fund Scheme aims to provide financial assistance to startups for proof of concept, prototype development, product trials, market entry, and commercialization.',
-                eligibility: "Check website for eligibility details",
-                deadline: "Check website for deadline",
-                sectorTags: ["Startup"],
-                region: 'All-India',
-                organiser: 'Startup India',
-                link: URL
-              });
-            }
-            
-            try {
-              const dataDir = path.join(process.cwd(), "data");
-              await fs.ensureDir(dataDir);
-              await fs.writeJson(path.join(dataDir, "schemes.json"), schemes, { spaces: 2 });
-              console.log(`✅ ${schemes.length} schemes saved.`);
-            } catch (saveError) {
-              console.error('Error saving schemes data:', saveError.message);
-              throw saveError;
-            }
-          }
-
-          scrapeSchemes().catch(error => {
-            console.error('Fatal error during scheme scraping:', error);
-            process.exit(1); // Exit with error code but GitHub Actions will continue
-          });
-          EOF
-
-      - name: Run GitHub-specific scrapers with error handling
-        run: |
-          echo "Running GitHub-optimized scrapers..."
-
-          # Create data directory if it doesn't exist
-          mkdir -p data
-
-          # Explicitly avoid running the original scrapers that use ES module syntax
-          echo "Temporarily renaming original scraper files to prevent them from being run..."
-          [ -f scripts/scrapeHackathons.js ] && mv scripts/scrapeHackathons.js scripts/scrapeHackathons.js.bak
-          [ -f scripts/scrapeSchemes.js ] && mv scripts/scrapeSchemes.js scripts/scrapeSchemes.js.bak
-
-          # Run GitHub-specific hackathons scraper
-          echo "Running GitHub-specific hackathons scraper..."
-          node scripts/github-hackathons.js || echo "Hackathons scraper failed but continuing workflow"
-
-          # Run GitHub-specific schemes scraper
-          echo "Running GitHub-specific schemes scraper..."
-          node scripts/github-schemes.js || echo "Schemes scraper failed but continuing workflow"
-
-          # Restore original files
-          [ -f scripts/scrapeHackathons.js.bak ] && mv scripts/scrapeHackathons.js.bak scripts/scrapeHackathons.js
-          [ -f scripts/scrapeSchemes.js.bak ] && mv scripts/scrapeSchemes.js.bak scripts/scrapeSchemes.js
-
-          # List scraped data files
-          echo "Contents of data directory:"
-          ls -la data/
-
-      - name: Commit and push changes
+      - name: Commit and push updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-
-          # Check if there are any changes
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Auto-update data from scheduled scrape [$(date)]"
-            git push
-          fi
+          git commit -m "chore(data): automated scrape update [skip ci]" || echo "No changes to commit"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
