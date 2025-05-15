@@ -23,9 +23,19 @@ async function logError(error, source) {
   }
 }
 
+// Status color mapping for visualizing hackathon statuses
+const STATUS_COLORS = {
+  'Open': 'rgb(34, 161, 150)', // Teal color for open hackathons
+  'Upcoming': 'rgb(234, 93, 37)', // Orange color for upcoming hackathons
+  'Ended': 'rgb(160, 160, 160)', // Gray for ended hackathons
+  'Unknown': 'rgb(100, 100, 100)' // Dark gray for unknown status
+};
+
 const SOURCES = {
   devfolio: "https://devfolio.co/hackathons",
-  devpost: "https://devpost.com/hackathons?order_by=recently_added", // Order by recently added to get fresh content
+  devpost: "https://devpost.com/hackathons?status[]=upcoming&status[]=open", // Filter for upcoming and open hackathons only
+  devpostAPI: "https://devpost.com/api/hackathons/search.json", // Direct API endpoint with .json suffix
+  devpostFeaturedAPI: "https://devpost.com/api/featured_hackathons", // API for featured hackathons
   mlh: "https://mlh.io/seasons/2025/events"
 };
 
@@ -62,13 +72,15 @@ async function scrapeHackathons() {
     console.error('Devfolio scraping failed:', error.message);
   }
 
-  // Scrape Devpost
+  // Scrape Devpost using API approach
   try {
-    console.log('Scraping Devpost hackathons...');
-    const devpostHackathons = await scrapeDevpostWithAxios();
+    console.log('Scraping Devpost hackathons using API...');
+    const devpostHackathons = await scrapeDevpostWithAPI();
     allHackathons.push(...devpostHackathons);
+    console.log(`✅ Added ${devpostHackathons.length} hackathons from Devpost API`);
   } catch (error) {
-    console.error('Devpost scraping failed:', error.message);
+    console.error('Devpost API scraping failed:', error.message);
+    await logError(error, 'devpost-api');
   }
 
   // If no hackathons found, add placeholder
@@ -227,16 +239,65 @@ async function scrapeDevfolioWithAxios() {
   }
 }
 
-// Axios/Cheerio approach for Devpost
-async function scrapeDevpostWithAxios() {
-  console.log(`Scraping ${SOURCES.devpost} with Axios/Cheerio...`);
+// Direct API approach for Devpost
+async function scrapeDevpostWithAPI() {
+  console.log('Scraping Devpost using available API endpoints...');
   
-  // Define the maximum number of pages to scrape
-  const MAX_PAGES = 10; // Increased to capture more hackathons
-  const MAX_HACKATHONS_PER_PAGE = 50; // Cap on hackathons per page to avoid memory issues
+  // Try multiple API endpoints to maximize our chances of success
+  let allHackathons = [];
   
-  // Simple approach: hardcode a few recent hackathons if Devpost scraping fails
-  // This is a fallback to ensure we have some content for this source
+  // First try the main search API
+  
+  // We'll try several approaches to maximize the chances of getting hackathon data
+  const apiEndpoints = [];
+  
+  // 1. First approach: Main search API with filters for upcoming and open hackathons
+  try {
+    const mainParams = {
+      order_by: 'recently_added',
+      status: ['upcoming', 'open'], 
+      page: 1,
+      per_page: 100 
+    };
+    
+    // Build query string
+    let queryParts = [];
+    for (const [key, value] of Object.entries(mainParams)) {
+      if (Array.isArray(value)) {
+        value.forEach(item => {
+          queryParts.push(`${encodeURIComponent(key)}[]=${encodeURIComponent(item)}`);
+        });
+      } else {
+        queryParts.push(`${encodeURIComponent(key)}=${encodeURIComponent(value)}`);
+      }
+    }
+    
+    const queryString = queryParts.join('&');
+    const mainApiUrl = `${SOURCES.devpostAPI}?${queryString}`;
+    apiEndpoints.push({
+      url: mainApiUrl,
+      name: 'Search API',
+    });
+  } catch (error) {
+    console.error(`Error building main API URL: ${error.message}`);
+  }
+  
+  // 2. Second approach: Featured hackathons API
+  apiEndpoints.push({
+    url: SOURCES.devpostFeaturedAPI,
+    name: 'Featured API',
+  });
+  
+  // 3. Third approach: Challenge type filter for online and in-person
+  ['online', 'in-person'].forEach(challengeType => {
+    const url = `${SOURCES.devpostFeaturedAPI}?challenge_type=${challengeType}`;
+    apiEndpoints.push({
+      url,
+      name: `Featured ${challengeType} API`,
+    });
+  });
+  
+  // Fallback hackathons if API fails
   const fallbackHackathons = [
     {
       id: `devpost-fallback-1`,
@@ -280,6 +341,230 @@ async function scrapeDevpostWithAxios() {
       organiser: "Devpost",
       link: "https://web3-global.devpost.com/"
     }
+  ];
+
+  try {
+    // Try each API endpoint in sequence until we get a result
+    for (const endpoint of apiEndpoints) {
+      console.log(`Trying Devpost ${endpoint.name}: ${endpoint.url}`);
+      
+      try {
+        const { data } = await axios.get(endpoint.url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          timeout: 15000
+        });
+        
+        console.log(`Successfully fetched data from Devpost ${endpoint.name}`);
+        
+        // Process data based on the endpoint type
+        let hackathonsFromApi = [];
+        
+        // Search API returns {hackathons: [...]} format
+        if (data && data.hackathons && Array.isArray(data.hackathons)) {
+          hackathonsFromApi = data.hackathons;
+          console.log(`Found ${hackathonsFromApi.length} hackathons in Search API response`);
+        }
+        // Featured API might return array directly or have different structure
+        else if (Array.isArray(data)) {
+          hackathonsFromApi = data;
+          console.log(`Found ${hackathonsFromApi.length} hackathons in Featured API response`);
+        }
+        // Some other format we don't recognize
+        else if (data && typeof data === 'object') {
+          // Try to find any array property that might contain hackathons
+          const arrayProps = Object.entries(data)
+            .filter(([key, value]) => Array.isArray(value) && value.length > 0)
+            .sort(([keyA, a], [keyB, b]) => b.length - a.length); // Sort by array size, largest first
+          
+          if (arrayProps.length > 0) {
+            const [propName, hackathonArray] = arrayProps[0];
+            hackathonsFromApi = hackathonArray;
+            console.log(`Found ${hackathonsFromApi.length} hackathons in '${propName}' property`);
+          } else {
+            console.log('No hackathon arrays found in API response');
+          }
+        }
+        
+        // If we found some hackathons, process them
+        if (hackathonsFromApi.length > 0) {
+          // Process hackathons from the API
+          const processedHackathons = hackathonsFromApi.map((apiHackathon, index) => {
+            // Determine the ID - different APIs might have different formats
+            const id = apiHackathon.id || 
+                      apiHackathon.slug || 
+                      `devpost-api-${endpoint.name.toLowerCase().replace(/\s+/g, '-')}-${index}-${Date.now()}`;
+            
+            // Extract title - try multiple possible property names
+            const title = apiHackathon.title || 
+                         apiHackathon.name || 
+                         apiHackathon.challenge_title || 
+                         `Hackathon #${index}`;
+            
+            // Extract description
+            const desc = apiHackathon.description || 
+                        apiHackathon.tagline || 
+                        apiHackathon.short_description || 
+                        apiHackathon.overview || 
+                        "Visit website for details";
+            
+            // Extract link
+            const link = apiHackathon.url || 
+                        apiHackathon.permalink || 
+                        apiHackathon.website || 
+                        apiHackathon.challenge_url || 
+                        `https://devpost.com/hackathons`;
+            
+            // Extract date information - different APIs use different property names
+            const submissionPeriod = apiHackathon.submission_period || "";
+            const startDate = apiHackathon.starts_at || apiHackathon.start_date || apiHackathon.submission_start_date || "";
+            const endDate = apiHackathon.ends_at || apiHackathon.end_date || apiHackathon.submission_end_date || "";
+            let dateText = "";
+            
+            if (startDate && endDate) {
+              dateText = `${new Date(startDate).toLocaleDateString()} - ${new Date(endDate).toLocaleDateString()}`;
+            } else if (endDate) {
+              dateText = `Ends ${new Date(endDate).toLocaleDateString()}`;
+            } else if (submissionPeriod) {
+              dateText = submissionPeriod;
+            } else {
+              dateText = "Check website for dates";
+            }
+            
+            // Determine status from various possible properties
+            let status = "Unknown";
+            if (apiHackathon.status) {
+              status = apiHackathon.status.charAt(0).toUpperCase() + apiHackathon.status.slice(1);
+            } else if (submissionPeriod && submissionPeriod.toLowerCase().includes('upcoming')) {
+              status = "Upcoming";
+            } else if (submissionPeriod && submissionPeriod.toLowerCase().includes('open')) {
+              status = "Open";
+            } else if (submissionPeriod && submissionPeriod.toLowerCase().includes('ended')) {
+              status = "Ended";
+            }
+            
+            // Skip any ended hackathons since we're only interested in upcoming and open ones
+            if (status.toLowerCase() === "ended") {
+              return null;
+            }
+            
+            // Extract location and mode
+            const location = apiHackathon.location || 
+                            apiHackathon.displayed_location || 
+                            apiHackathon.venue || 
+                            "Global";
+                            
+            const isOnline = apiHackathon.online_only || 
+                            (location && location.toLowerCase().includes('online')) || 
+                            (apiHackathon.challenge_type && apiHackathon.challenge_type.includes('online'));
+                            
+            const mode = isOnline ? "Online" : "In-person";
+            
+            // Extract prize information
+            const prizeAmount = apiHackathon.prize_amount || 
+                             apiHackathon.total_prizes || 
+                             apiHackathon.prize_total || 
+                             "";
+                             
+            const prize = prizeAmount ? `$${prizeAmount}` : "";
+            
+            // Extract participants count
+            const participants = apiHackathon.registrations_count?.toString() || 
+                              apiHackathon.participants_count?.toString() || 
+                              apiHackathon.registrations?.toString() || 
+                              "";
+            
+            // Extract tags/categories
+            const themes = Array.isArray(apiHackathon.themes) ? apiHackathon.themes : [];
+            const technologies = Array.isArray(apiHackathon.technologies) ? apiHackathon.technologies : [];
+            const categories = Array.isArray(apiHackathon.categories) ? apiHackathon.categories : [];
+            const sectorTags = [...themes, ...technologies, ...categories].filter(Boolean);
+            
+            return {
+              id,
+              title,
+              desc,
+              date: dateText,
+              mode,
+              location,
+              status,
+              prize,
+              participants,
+              sectorTags: sectorTags.length > 0 ? sectorTags : ['Technology'],
+              organiser: "Devpost",
+              link
+            };
+          }).filter(Boolean); // Filter out any nulls (ended hackathons)
+          
+          // Add the processed hackathons to our collection
+          allHackathons.push(...processedHackathons);
+          console.log(`Added ${processedHackathons.length} hackathons from ${endpoint.name}`);
+        }
+      } catch (endpointError) {
+        console.error(`Error with ${endpoint.name}: ${endpointError.message}`);
+      }
+    }
+    
+    // After trying all endpoints, check if we got any hackathons
+    if (allHackathons.length > 0) {
+      // Remove duplicates by URL
+      const uniqueHackathons = [];
+      const urls = new Set();
+      
+      for (const hackathon of allHackathons) {
+        if (!urls.has(hackathon.link)) {
+          urls.add(hackathon.link);
+          uniqueHackathons.push(hackathon);
+        }
+      }
+      
+      console.log(`Found ${uniqueHackathons.length} unique hackathons across all Devpost API endpoints`);
+      return uniqueHackathons;
+    }
+    
+    // If no hackathons found from any API, fall back to HTML scraping
+    console.log('No hackathons found from any API endpoints, falling back to HTML scraping...');
+    return await scrapeDevpostWithAxios();
+    
+  } catch (error) {
+    console.error(`Devpost API scraping failed: ${error.message}`);
+    console.error(error.stack);
+    await logError(error, 'devpost-api');
+    
+    // Fall back to HTML scraping if API fails
+    console.log('Falling back to HTML scraping due to error...');
+    return await scrapeDevpostWithAxios();
+  }
+}
+
+// Axios/Cheerio approach for Devpost (fallback)
+async function scrapeDevpostWithAxios() {
+  console.log(`Fallback: Scraping ${SOURCES.devpost} with Axios/Cheerio...`);
+  
+  // Define the maximum number of pages to scrape
+  const MAX_PAGES = 10; // Increased to capture more hackathons
+  const MAX_HACKATHONS_PER_PAGE = 50; // Cap on hackathons per page to avoid memory issues
+  
+  // Simple approach: hardcode a few recent hackathons if Devpost scraping fails
+  // This is a fallback to ensure we have some content for this source
+  const fallbackHackathons = [
+    {
+      id: `devpost-fallback-1`,
+      title: "No hackathon found",
+      desc: "No hackathon found",
+      date: "",
+      mode: "Online",
+      location: "Global",
+      status: "Upcoming", 
+      prize: "",
+      participants: "",
+      sectorTags: ['Technology'],
+      organiser: "",
+      link: ""
+    },
   ];
   
   try {
@@ -354,23 +639,57 @@ async function scrapeDevpostWithAxios() {
             const parentElement = $el.parent().parent(); // Go up to get the container
             const cardElement = parentElement.closest('[class*="card"], [class*="Card"], .card, article, .challenge-listing, .hackathon-tile') || parentElement;
             
-            // Extract title
+            // Extract whatever information we can from card
             const title = $el.text().trim() || cardElement.find('h3, h2, h4, .title').first().text().trim();
-            
-            // Extract description
             const desc = cardElement.find('p, .description, .summary').first().text().trim();
+            const link = cardElement.find('a').attr('href') || `https://devpost.com/hackathons`;
             
-            // Extract date information
-            let date = "Check website for dates";
-            const dateEl = cardElement.find('time, [datetime], .date, [class*="date"], [class*="Date"]').first();
-            if (dateEl.length) {
-              date = dateEl.text().trim() || dateEl.attr('datetime');
+            // Extract date text if available
+            const dateElement = cardElement.find('.date, .time, .timeframe');
+            const dateText = dateElement.length > 0 ? dateElement.text().trim() : "Check website for dates";
+            
+            // Extract status - since we're on a page filtered for upcoming and open hackathons
+            let status = "Unknown";
+            
+            // Look for status indicators in the HTML
+            const statusText = cardElement.text().toLowerCase();
+            const statusElement = cardElement.find('.status, .badge, .state, .submission-status');
+            const statusElementText = statusElement.length > 0 ? statusElement.text().toLowerCase().trim() : "";
+            
+            // Check date text for status indicators
+            if (dateText.toLowerCase().includes('open')) {
+              status = "Open";
+            } else if (dateText.toLowerCase().includes('upcoming') || 
+                     dateText.toLowerCase().includes('coming soon') || 
+                     dateText.toLowerCase().includes('starts ')) {
+              status = "Upcoming";
             }
             
-            // Extract status (Upcoming, Open, Ended)
-            let status = "Unknown";
+            // Check status element
+            if (status === "Unknown" && statusElementText) {
+              if (statusElementText.includes('open')) {
+                status = "Open";
+              } else if (statusElementText.includes('upcoming') || 
+                       statusElementText.includes('soon')) {
+                status = "Upcoming";
+              }
+            }
+            
+            // As a fallback since we know we're on the upcoming/open page
+            if (status === "Unknown") {
+              // Check if we have dates that suggest it's upcoming
+              if (dateText.match(/start.*\d{1,2}[/-]\d{1,2}/) || 
+                  dateText.includes('soon')) {
+                status = "Upcoming";
+              } else {
+                // Default to "Open" since we're on a filtered page
+                status = "Open";
+              }  
+            }
+            
+            // Additional status check from legacy code
             const statusEl = cardElement.find('[class*="status"], [class*="Status"], .tag, .badge').first();
-            if (statusEl.length) {
+            if (statusEl.length && status === "Unknown") {
               const statusText = statusEl.text().trim().toLowerCase();
               if (statusText.includes('upcoming')) status = "Upcoming";
               else if (statusText.includes('open')) status = "Open";
@@ -431,7 +750,7 @@ async function scrapeDevpostWithAxios() {
                 id: `devpost-${page}-${i}-${Date.now()}`,
                 title: title,
                 desc: desc || "Visit website for details",
-                date: date,
+                date: dateText,
                 mode: mode,
                 location: location,
                 status: status,

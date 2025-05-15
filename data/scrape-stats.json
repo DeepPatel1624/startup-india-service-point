@@ -1,7 +1,7 @@
 {
-  "totalScrapes": 12,
-  "lastScrapeTime": "2025-05-15T00:17:06.275Z",
-  "successfulScrapes": 12,
+  "totalScrapes": 16,
+  "lastScrapeTime": "2025-05-15T00:41:07.881Z",
+  "successfulScrapes": 16,
   "failedScrapes": 0,
   "hackathonsCounts": [
     {
@@ -110,6 +110,46 @@
     },
     {
       "timestamp": "2025-05-15T00:17:06.275Z",
+      "count": 54,
+      "sources": {
+        "devfolio": 28,
+        "devpost": 26,
+        "mlh": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-15T00:28:50.487Z",
+      "count": 54,
+      "sources": {
+        "devfolio": 28,
+        "devpost": 26,
+        "mlh": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-15T00:33:05.351Z",
+      "count": 54,
+      "sources": {
+        "devfolio": 28,
+        "devpost": 26,
+        "mlh": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-15T00:37:46.391Z",
+      "count": 31,
+      "sources": {
+        "devfolio": 28,
+        "devpost": 3,
+        "mlh": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-15T00:41:07.881Z",
       "count": 54,
       "sources": {
         "devfolio": 28,
