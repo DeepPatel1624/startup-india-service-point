@@ -1,6 +1,6 @@
 [
   {
-    "id": "devfolio-0-1747376591122",
+    "id": "devfolio-0-1747462845321",
     "title": "Bio x AI Hackathon 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -13,7 +13,7 @@
     "link": "https://bio-x-ai-berlin.devfolio.co/"
   },
   {
-    "id": "devfolio-1-1747376591123",
+    "id": "devfolio-1-1747462845322",
     "title": "Base Batches: 001",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -26,7 +26,7 @@
     "link": "https://base-batch-india.devfolio.co/"
   },
   {
-    "id": "devfolio-2-1747376591124",
+    "id": "devfolio-2-1747462845322",
     "title": "Bio x AI Hackathon 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -39,7 +39,7 @@
     "link": "https://bio-x-ai-berlin.devfolio.co/"
   },
   {
-    "id": "devfolio-3-1747376591124",
+    "id": "devfolio-3-1747462845323",
     "title": "Base Batches: 001",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -52,7 +52,7 @@
     "link": "https://base-batch-india.devfolio.co/"
   },
   {
-    "id": "devfolio-4-1747376591125",
+    "id": "devfolio-4-1747462845323",
     "title": "Base Batch Africa",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -65,59 +65,7 @@
     "link": "https://base-batch-africa.devfolio.co/"
   },
   {
-    "id": "devfolio-5-1747376591125",
-    "title": "Base Batch APAC",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://base-batch-apac.devfolio.co/"
-  },
-  {
-    "id": "devfolio-6-1747376591125",
-    "title": "Base Batch LatAm",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://base-batch-latam.devfolio.co/"
-  },
-  {
-    "id": "devfolio-7-1747376591126",
-    "title": "Base Batch India",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://base-batch-india.devfolio.co/"
-  },
-  {
-    "id": "devfolio-8-1747376591126",
-    "title": "Base Batch Europe",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://base-batch-europe.devfolio.co/"
-  },
-  {
-    "id": "devfolio-9-1747376591127",
+    "id": "devfolio-5-1747462845324",
     "title": "Base Batch North America",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -130,7 +78,59 @@
     "link": "https://base-batch-america.devfolio.co/"
   },
   {
-    "id": "devfolio-10-1747376591127",
+    "id": "devfolio-6-1747462845324",
+    "title": "Base Batch APAC",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://base-batch-apac.devfolio.co/"
+  },
+  {
+    "id": "devfolio-7-1747462845325",
+    "title": "Base Batch Europe",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://base-batch-europe.devfolio.co/"
+  },
+  {
+    "id": "devfolio-8-1747462845325",
+    "title": "Base Batch LatAm",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://base-batch-latam.devfolio.co/"
+  },
+  {
+    "id": "devfolio-9-1747462845326",
+    "title": "Base Batch India",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://base-batch-india.devfolio.co/"
+  },
+  {
+    "id": "devfolio-10-1747462845326",
     "title": "Lisk Builders Challenge: Round One",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -143,7 +143,7 @@
     "link": "https://lisk-builders-challenge-1.devfolio.co/"
   },
   {
-    "id": "devfolio-11-1747376591128",
+    "id": "devfolio-11-1747462845327",
     "title": "HACK 'N CRACK",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -156,20 +156,7 @@
     "link": "https://hack-n-crack.devfolio.co/"
   },
   {
-    "id": "devfolio-12-1747376591129",
-    "title": "DeerHack 2025",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://deerhack-25.devfolio.co/"
-  },
-  {
-    "id": "devfolio-13-1747376591129",
+    "id": "devfolio-12-1747462845328",
     "title": "Bio x AI Hackathon 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -182,7 +169,20 @@
     "link": "https://bio-x-ai-berlin.devfolio.co/"
   },
   {
-    "id": "devfolio-14-1747376591130",
+    "id": "devfolio-13-1747462845328",
+    "title": "Hack4Bengal 4.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hack4bengal-4.devfolio.co/"
+  },
+  {
+    "id": "devfolio-14-1747462845329",
     "title": "Hack With Gujarat",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -195,7 +195,7 @@
     "link": "https://hack-with-gujarat.devfolio.co/"
   },
   {
-    "id": "devfolio-15-1747376591131",
+    "id": "devfolio-15-1747462845330",
     "title": "Sui Overflow 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -208,7 +208,7 @@
     "link": "https://sui-overflow-2025.devfolio.co/"
   },
   {
-    "id": "devfolio-16-1747376591131",
+    "id": "devfolio-16-1747462845330",
     "title": "HackPrix Season 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -221,7 +221,7 @@
     "link": "https://hackprix-2025.devfolio.co/"
   },
   {
-    "id": "devfolio-17-1747376591132",
+    "id": "devfolio-17-1747462845331",
     "title": "HackNeeti 1.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -234,7 +234,7 @@
     "link": "https://hackneeti.devfolio.co/"
   },
   {
-    "id": "devfolio-18-1747376591133",
+    "id": "devfolio-18-1747462845332",
     "title": "Sankalp 101",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -247,7 +247,7 @@
     "link": "https://sankalp101.devfolio.co/"
   },
   {
-    "id": "devfolio-19-1747376591133",
+    "id": "devfolio-19-1747462845332",
     "title": "HackArenaa",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -260,7 +260,7 @@
     "link": "https://hackarenaa.devfolio.co/"
   },
   {
-    "id": "devfolio-20-1747376591134",
+    "id": "devfolio-20-1747462845333",
     "title": "ETHKyiv 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -273,7 +273,7 @@
     "link": "https://ethkyiv.devfolio.co/"
   },
   {
-    "id": "devfolio-21-1747376591135",
+    "id": "devfolio-21-1747462845333",
     "title": "HexaFalls",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -286,7 +286,20 @@
     "link": "https://hexafalls.devfolio.co/"
   },
   {
-    "id": "devfolio-22-1747376591135",
+    "id": "devfolio-22-1747462845334",
+    "title": "DeerHack 2025",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://deerhack-25.devfolio.co/"
+  },
+  {
+    "id": "devfolio-23-1747462845334",
     "title": "Coinbase Agents in Action Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -299,20 +312,7 @@
     "link": "https://cdp-agentkit-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-23-1747376591135",
-    "title": "ZK Hack Berlin",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://zk-hack-berlin.devfolio.co/"
-  },
-  {
-    "id": "devfolio-24-1747376591136",
+    "id": "devfolio-24-1747462845334",
     "title": "HACKATRON 2K25",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -325,7 +325,7 @@
     "link": "https://hackatron-k.devfolio.co/"
   },
   {
-    "id": "devfolio-25-1747376591136",
+    "id": "devfolio-25-1747462845335",
     "title": "BrinHack",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -338,7 +338,7 @@
     "link": "https://brinhack.devfolio.co/"
   },
   {
-    "id": "devfolio-26-1747376591136",
+    "id": "devfolio-26-1747462845335",
     "title": "Recurzive_v2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -351,7 +351,7 @@
     "link": "https://recurzivev2.devfolio.co/"
   },
   {
-    "id": "devfolio-27-1747376591137",
+    "id": "devfolio-27-1747462845335",
     "title": "HackHaven 2.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
