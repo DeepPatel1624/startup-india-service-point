@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "name": "Startup India Initiative",
+    "launched": 2016,
+    "objective": "To create an ecosystem that promotes innovation and entrepreneurship through policy support, tax incentives, and easier compliance for startups.",
+    "benefits": [
+      "3-year tax holiday on profits for eligible startups (Section 80-IAC of the Income Tax Act)",
+      "Fund of Funds (₹10,000 Cr corpus) managed by SIDBI to provide capital access through alternative investment funds (AIFs)",
+      "Self-certification under labor and environmental laws",
+      "Simplified company registration through SPICe+"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Stand-Up India",
+    "launched": 2016,
+    "objective": "To promote entrepreneurship among SC/ST and women entrepreneurs by providing easy access to loans for new businesses.",
+    "benefits": [
+      "Loans between ₹10 lakh and ₹1 crore",
+      "Available for manufacturing, services, and trading sectors",
+      "Repayment period of up to 7 years with a moratorium of 18 months",
+      "Encourages inclusivity in entrepreneurship"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Startup India Fund of Funds (FFS)",
+    "launched": 2016,
+    "objective": "To increase the availability of capital for startups by investing in venture capital and alternate investment funds that support early-stage ventures.",
+    "benefits": [
+      "₹10,000 crore corpus distributed through SIDBI to alternate investment funds (AIFs)",
+      "Indirect funding model, supporting multiple startups through VCs",
+      "No direct investment in startups, but facilitates capital infusion through institutional investors"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)",
+    "launched": 2000,
+    "objective": "To provide collateral-free loans to micro and small enterprises (MSMEs), including startups, and encourage financial institutions to lend without security requirements.",
+    "benefits": [
+      "Collateral-free credit up to ₹2 crores",
+      "Coverage of both term loans and working capital facilities",
+      "Encourages risk-free lending by financial institutions"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Atal Innovation Mission (AIM)",
+    "launched": 2016,
+    "objective": "To foster innovation and entrepreneurship in India by promoting initiatives in education, incubation, and research.",
+    "benefits": [
+      "Establishment of Atal Tinkering Labs (ATL) in schools to encourage innovation from a young age",
+      "Creation of Atal Incubation Centers (AICs) to support startups with infrastructure and seed funding",
+      "Mentorship programs and partnership opportunities"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "SAMRIDH Scheme",
+    "launched": 2021,
+    "fullName": "Startup Accelerator of MeitY for Product Innovation, Development & Growth",
+    "objective": "To support early-stage startups by providing mentorship, access to corporate accelerators, and co-investment with VCs and angel investors.",
+    "benefits": [
+      "Provides financial support of up to ₹40 lakh per startup by co-investing with venture capitalists or angel investors to help early-stage startups scale",
+      "Provides access to corporate accelerators, mentorship programs, and industry networks",
+      "Focuses on deep-tech and digital innovation"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "SIP-EIT",
+    "fullName": "Support for International Patent Protection in Electronics & IT",
+    "launched": 2014,
+    "objective": "To encourage startups to protect their innovations internationally by reimbursing patent filing expenses.",
+    "benefits": [
+      "Reimbursement up to ₹15 lakh per patent",
+      "Covers filing costs, attorney fees, and examination fees",
+      "Strengthens intellectual property (IP) protection for Indian startups"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Digital India Bhashini Initiative",
+    "launched": 2022,
+    "objective": "To promote AI-based language solutions and support startups working on multilingual and natural language processing (NLP) technologies.",
+    "benefits": [
+      "Government support for AI-driven Indic language solutions",
+      "Encourages technology innovation for regional and local languages",
+      "Connects startups with market opportunities"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "E-Marketplace (GeM) for Startups",
+    "launched": 2016,
+    "objective": "To facilitate direct access to government procurement for startups.",
+    "benefits": [
+      "Startups can register as sellers on the GeM portal",
+      "No tender requirements for certain startups",
+      "Increased visibility to government buyers"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "MUDRA Banks",
+    "fullName": "Pradhan Mantri MUDRA Yojana (PMMY)",
+    "launched": 2015,
+    "objective": "To provide micro-financing support for small businesses and startups (in service sector and small trading businesses).",
+    "benefits": [
+      "Loans under three categories: Shishu (₹50,000), Kishor (₹5 lakh), and Tarun (₹10 lakh)",
+      "No collateral required",
+      "Encourages self-employment and entrepreneurship among micro and small enterprises (MSEs), particularly non-corporate small businesses in manufacturing, trading, services, and select agriculture-allied activities"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "MeitY Startup Hub (MSH)",
+    "launched": 2019,
+    "objective": "To promote deep-tech innovation and support startups working in IT, AI, cybersecurity, and fintech.",
+    "benefits": [
+      "Provides financial support and accelerator programs",
+      "Access to government R&D labs for technology startups",
+      "Mentorship and networking opportunities with industry experts"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Startup India Seed Fund Scheme (SISFS)",
+    "launched": 2021,
+    "objective": "To provide seed funding for early-stage startups to develop prototypes and conduct market validation.",
+    "benefits": [
+      "Grants up to ₹20 lakh for prototype development",
+      "Investment up to ₹50 lakh as convertible debentures",
+      "Access to incubators across India for infrastructure and mentoring"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Aatmanirbhar Bharat App Innovation Challenge",
+    "launched": 2020,
+    "objective": "To promote homegrown app development across categories like AI, gaming, health, and education.",
+    "benefits": [
+      "Financial rewards for top apps across multiple categories",
+      "Encourages development in AI, gaming, e-learning, health, and fintech",
+      "Support for scaling successful apps in global markets"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "SPICe+",
+    "fullName": "Simplified Proforma for Incorporating a Company Electronically",
+    "launched": 2020,
+    "objective": "To simplify company incorporation and related regulatory approvals through a single-window online process.",
+    "benefits": [
+      "Provides integrated services for company incorporation, including PAN, TAN, GST, EPFO, ESIC, and bank account opening in a single application",
+      "Reduces compliance burden and time required for business registration",
+      "Mandatory for all new company registrations, including Private Limited Companies, One Person Companies (OPCs), Section 8 Companies, and Producer Companies incorporated in India"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Software Technology Park (STP) Scheme",
+    "launched": 1991,
+    "objective": "To boost IT and software export sectors by offering tax benefits and infrastructure support.",
+    "benefits": [
+      "100% tax exemption on software exports",
+      "Duty-free import of capital goods",
+      "Access to world-class infrastructure and incubation facilities"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Dairy Processing and Infrastructure Development Fund (DIDF)",
+    "launched": 2017,
+    "objective": "To provide financial support for dairy startups and cooperatives to modernize and expand processing capacities.",
+    "benefits": [
+      "Long-term loans at concessional interest rates",
+      "Financial assistance for milk processing, chilling plants, and modern dairy equipment",
+      "Strengthens the dairy value chain for entrepreneurs"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Multiplier Grants Scheme (MGS)",
+    "launched": 2016,
+    "objective": "To promote industry-academia collaboration for R&D projects in electronics, IT, and software development.",
+    "benefits": [
+      "The government matches industry contributions for R&D projects",
+      "The maximum grant for individual industry projects is ₹2 crore, but for collaborative projects, it can go up to ₹10 crore",
+      "Supports innovation in electronics, IT, and software products"
+    ]
+  }
+]
