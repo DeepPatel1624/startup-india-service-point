@@ -1,7 +1,7 @@
 {
-  "totalScrapes": 16,
-  "lastScrapeTime": "2025-05-15T00:41:07.881Z",
-  "successfulScrapes": 16,
+  "totalScrapes": 23,
+  "lastScrapeTime": "2025-05-21T06:23:33.723Z",
+  "successfulScrapes": 23,
   "failedScrapes": 0,
   "hackathonsCounts": [
     {
@@ -155,6 +155,69 @@
         "devfolio": 28,
         "devpost": 26,
         "mlh": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-15T06:23:34.448Z",
+      "count": 28,
+      "sources": {
+        "devfolio": 28,
+        "devpost": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-16T06:23:09.752Z",
+      "count": 28,
+      "sources": {
+        "devfolio": 28,
+        "devpost": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-17T06:20:44.074Z",
+      "count": 28,
+      "sources": {
+        "devfolio": 28,
+        "devpost": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-18T06:21:14.583Z",
+      "count": 28,
+      "sources": {
+        "devfolio": 28,
+        "devpost": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-19T06:24:14.125Z",
+      "count": 30,
+      "sources": {
+        "devfolio": 30,
+        "devpost": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-20T06:23:35.722Z",
+      "count": 30,
+      "sources": {
+        "devfolio": 30,
+        "devpost": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-05-21T06:23:33.723Z",
+      "count": 30,
+      "sources": {
+        "devfolio": 30,
+        "devpost": 0,
         "placeholder": 0
       }
     }
