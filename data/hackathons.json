@@ -1,6 +1,6 @@
 [
   {
-    "id": "devfolio-0-1749709469840",
+    "id": "devfolio-0-1749795853307",
     "title": "Chromion: A Chainlink Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -13,7 +13,7 @@
     "link": "https://chromion-chainlink-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-1-1749709469841",
+    "id": "devfolio-1-1749795853308",
     "title": "Coinbase Agents in Action Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -26,7 +26,7 @@
     "link": "https://cdp-agentkit-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-2-1749709469842",
+    "id": "devfolio-2-1749795853309",
     "title": "Base Batch Messaging Buildathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -39,7 +39,7 @@
     "link": "https://base-batch-messaging.devfolio.co/"
   },
   {
-    "id": "devfolio-3-1749709469842",
+    "id": "devfolio-3-1749795853309",
     "title": "Warpspeed: Agentic AI Hackathon | Lightspeed India",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -52,7 +52,7 @@
     "link": "https://warpspeed2025.devfolio.co/"
   },
   {
-    "id": "devfolio-4-1749709469843",
+    "id": "devfolio-4-1749795853310",
     "title": "Chromion: A Chainlink Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -65,7 +65,7 @@
     "link": "https://chromion-chainlink-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-5-1749709469843",
+    "id": "devfolio-5-1749795853310",
     "title": "Coinbase Agents in Action Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -78,7 +78,7 @@
     "link": "https://cdp-agentkit-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-6-1749709469844",
+    "id": "devfolio-6-1749795853311",
     "title": "Base Batch Messaging Buildathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -91,7 +91,7 @@
     "link": "https://base-batch-messaging.devfolio.co/"
   },
   {
-    "id": "devfolio-7-1749709469844",
+    "id": "devfolio-7-1749795853311",
     "title": "Warpspeed: Agentic AI Hackathon | Lightspeed India",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -104,20 +104,7 @@
     "link": "https://warpspeed2025.devfolio.co/"
   },
   {
-    "id": "devfolio-8-1749709469845",
-    "title": "ETHKyiv 2025",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://ethkyiv.devfolio.co/"
-  },
-  {
-    "id": "devfolio-9-1749709469846",
+    "id": "devfolio-8-1749795853312",
     "title": "Warpspeed: Agentic AI Hackathon | Lightspeed India",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -130,7 +117,7 @@
     "link": "https://warpspeed2025.devfolio.co/"
   },
   {
-    "id": "devfolio-10-1749709469847",
+    "id": "devfolio-9-1749795853313",
     "title": "Base Batch Messaging Buildathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -143,7 +130,7 @@
     "link": "https://base-batch-messaging.devfolio.co/"
   },
   {
-    "id": "devfolio-11-1749709469847",
+    "id": "devfolio-10-1749795853314",
     "title": "Metis Hyperion: HyperHack",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -156,20 +143,7 @@
     "link": "https://metis-hyperhack.devfolio.co/"
   },
   {
-    "id": "devfolio-12-1749709469848",
-    "title": "HackNeeti 1.0",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://hackneeti.devfolio.co/"
-  },
-  {
-    "id": "devfolio-13-1749709469849",
+    "id": "devfolio-11-1749795853314",
     "title": "HexaFalls",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -182,7 +156,20 @@
     "link": "https://hexafalls.devfolio.co/"
   },
   {
-    "id": "devfolio-14-1749709469849",
+    "id": "devfolio-12-1749795853315",
+    "title": "HackNeeti 1.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hackneeti.devfolio.co/"
+  },
+  {
+    "id": "devfolio-13-1749795853316",
     "title": "DeerHack 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -195,7 +182,7 @@
     "link": "https://deerhack-25.devfolio.co/"
   },
   {
-    "id": "devfolio-15-1749709469850",
+    "id": "devfolio-14-1749795853316",
     "title": "Coinbase Agents in Action Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -208,7 +195,7 @@
     "link": "https://cdp-agentkit-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-16-1749709469850",
+    "id": "devfolio-15-1749795853317",
     "title": "ZK Hack Berlin",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -221,7 +208,7 @@
     "link": "https://zk-hack-berlin.devfolio.co/"
   },
   {
-    "id": "devfolio-17-1749709469851",
+    "id": "devfolio-16-1749795853317",
     "title": "Chromion: A Chainlink Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -234,7 +221,7 @@
     "link": "https://chromion-chainlink-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-18-1749709469852",
+    "id": "devfolio-17-1749795853318",
     "title": "The IndeHub Hackathon | Build With WWDC25",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -247,7 +234,7 @@
     "link": "https://wwdc25.devfolio.co/"
   },
   {
-    "id": "devfolio-19-1749709469852",
+    "id": "devfolio-18-1749795853319",
     "title": "Hack Quanta",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -260,7 +247,7 @@
     "link": "https://hack-quanta.devfolio.co/"
   },
   {
-    "id": "devfolio-20-1749709469853",
+    "id": "devfolio-19-1749795853319",
     "title": "Hacking Paris  | Powered by Chiliz",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -273,7 +260,7 @@
     "link": "https://hacking-paris.devfolio.co/"
   },
   {
-    "id": "devfolio-21-1749709469853",
+    "id": "devfolio-20-1749795853320",
     "title": "DEVMatch Hackathon 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -286,7 +273,7 @@
     "link": "https://devmatch-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-22-1749709469853",
+    "id": "devfolio-21-1749795853320",
     "title": "Hack4Maharashtra",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -299,7 +286,7 @@
     "link": "https://hack4maharashtra.devfolio.co/"
   },
   {
-    "id": "devfolio-23-1749709469854",
+    "id": "devfolio-22-1749795853320",
     "title": "Lisk Builders Challenge: Round Two",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -312,7 +299,7 @@
     "link": "https://lisk-builders-challenge-2.devfolio.co/"
   },
   {
-    "id": "devfolio-24-1749709469854",
+    "id": "devfolio-23-1749795853321",
     "title": "StatusCode 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -325,7 +312,7 @@
     "link": "https://statuscode-2.devfolio.co/"
   },
   {
-    "id": "devfolio-25-1749709469854",
+    "id": "devfolio-24-1749795853321",
     "title": "Hack4Brahmaputra",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -338,7 +325,7 @@
     "link": "https://hack4brahmaputra.devfolio.co/"
   },
   {
-    "id": "devfolio-26-1749709469854",
+    "id": "devfolio-25-1749795853321",
     "title": "RNS Hack_Overflow 2.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -351,7 +338,7 @@
     "link": "https://rns-hackoverflow-2.devfolio.co/"
   },
   {
-    "id": "devfolio-27-1749709469855",
+    "id": "devfolio-26-1749795853321",
     "title": "Hack-O-Knight",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -364,7 +351,7 @@
     "link": "https://hack-o-knight.devfolio.co/"
   },
   {
-    "id": "devfolio-28-1749709469855",
+    "id": "devfolio-27-1749795853321",
     "title": "Hack The Horizon 2.0 (VIT-Chennai)",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -377,7 +364,7 @@
     "link": "https://hack-the-horizon-2.devfolio.co/"
   },
   {
-    "id": "devfolio-29-1749709469855",
+    "id": "devfolio-28-1749795853322",
     "title": "Bio x AI Hackathon 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -390,7 +377,7 @@
     "link": "https://bio-x-ai-berlin.devfolio.co/"
   },
   {
-    "id": "devfolio-30-1749709469855",
+    "id": "devfolio-29-1749795853322",
     "title": "Hello World Hacks",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -403,7 +390,7 @@
     "link": "https://hello-world-hacks.devfolio.co/"
   },
   {
-    "id": "devfolio-31-1749709469856",
+    "id": "devfolio-30-1749795853322",
     "title": "InnovXChange",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -416,7 +403,7 @@
     "link": "https://innovxchange.devfolio.co/"
   },
   {
-    "id": "devfolio-32-1749709469856",
+    "id": "devfolio-31-1749795853322",
     "title": "Hack With Gujarat",
     "desc": "Hackathon",
     "date": "Check website for dates",
