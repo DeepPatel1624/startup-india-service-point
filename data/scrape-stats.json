@@ -1,7 +1,7 @@
 {
-  "totalScrapes": 81,
-  "lastScrapeTime": "2025-07-18T06:26:01.398Z",
-  "successfulScrapes": 81,
+  "totalScrapes": 82,
+  "lastScrapeTime": "2025-07-19T06:24:02.898Z",
+  "successfulScrapes": 82,
   "failedScrapes": 0,
   "hackathonsCounts": [
     {
@@ -736,6 +736,15 @@
     },
     {
       "timestamp": "2025-07-18T06:26:01.398Z",
+      "count": 27,
+      "sources": {
+        "devfolio": 27,
+        "devpost": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2025-07-19T06:24:02.898Z",
       "count": 27,
       "sources": {
         "devfolio": 27,
