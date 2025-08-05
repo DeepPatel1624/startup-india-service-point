@@ -1,19 +1,6 @@
 [
   {
-    "id": "devfolio-0-1754289171663",
-    "title": "Based Fellowship 3.0",
-    "desc": "Fellowship",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://based-fellowship-3.devfolio.co/"
-  },
-  {
-    "id": "devfolio-1-1754289171664",
+    "id": "devfolio-0-1754375307623",
     "title": "Onchain Summer Awards",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -26,33 +13,7 @@
     "link": "https://onchain-summer-awards.devfolio.co/"
   },
   {
-    "id": "devfolio-2-1754289171664",
-    "title": "Based Fellowship 3.0",
-    "desc": "Fellowship",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://based-fellowship-3.devfolio.co/"
-  },
-  {
-    "id": "devfolio-3-1754289171665",
-    "title": "Onchain Summer Awards",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://onchain-summer-awards.devfolio.co/"
-  },
-  {
-    "id": "devfolio-4-1754289171665",
+    "id": "devfolio-1-1754375307624",
     "title": "Hack4Help",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -65,7 +26,20 @@
     "link": "https://hack4help.devfolio.co/"
   },
   {
-    "id": "devfolio-5-1754289171666",
+    "id": "devfolio-2-1754375307625",
+    "title": "Agent Assembly",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://senpai-agent-assembly.devfolio.co/"
+  },
+  {
+    "id": "devfolio-3-1754375307625",
     "title": "Zero's Arena 01",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -78,7 +52,7 @@
     "link": "https://zeros-arena-1.devfolio.co/"
   },
   {
-    "id": "devfolio-6-1754289171666",
+    "id": "devfolio-4-1754375307626",
     "title": "StatusCode 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -91,7 +65,7 @@
     "link": "https://statuscode-2.devfolio.co/"
   },
   {
-    "id": "devfolio-7-1754289171667",
+    "id": "devfolio-5-1754375307626",
     "title": "SDGForge",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -104,7 +78,7 @@
     "link": "https://sdgforge.devfolio.co/"
   },
   {
-    "id": "devfolio-8-1754289171668",
+    "id": "devfolio-6-1754375307626",
     "title": "Hack Beyond Limits Online Odyssey",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -117,7 +91,7 @@
     "link": "https://hack-beyond-limits-online-odyssey.devfolio.co/"
   },
   {
-    "id": "devfolio-9-1754289171668",
+    "id": "devfolio-7-1754375307627",
     "title": "Hack4Maharashtra",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -130,7 +104,7 @@
     "link": "https://hack4maharashtra.devfolio.co/"
   },
   {
-    "id": "devfolio-10-1754289171669",
+    "id": "devfolio-8-1754375307627",
     "title": "DSU DevHack 2.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -143,7 +117,7 @@
     "link": "https://dsudevhack2.devfolio.co/"
   },
   {
-    "id": "devfolio-11-1754289171670",
+    "id": "devfolio-9-1754375307628",
     "title": "MetaMorph",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -156,7 +130,7 @@
     "link": "https://metamorph.devfolio.co/"
   },
   {
-    "id": "devfolio-12-1754289171672",
+    "id": "devfolio-10-1754375307629",
     "title": "Recurzive V2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -169,7 +143,7 @@
     "link": "https://recurzive-v2.devfolio.co/"
   },
   {
-    "id": "devfolio-13-1754289171672",
+    "id": "devfolio-11-1754375307629",
     "title": "Hack4Brahmaputra",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -182,7 +156,7 @@
     "link": "https://hack4brahmaputra.devfolio.co/"
   },
   {
-    "id": "devfolio-14-1754289171673",
+    "id": "devfolio-12-1754375307630",
     "title": "Onchain Summer Awards",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -195,7 +169,7 @@
     "link": "https://onchain-summer-awards.devfolio.co/"
   },
   {
-    "id": "devfolio-15-1754289171674",
+    "id": "devfolio-13-1754375307631",
     "title": "Hack Quanta",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -208,7 +182,7 @@
     "link": "https://hack-quanta.devfolio.co/"
   },
   {
-    "id": "devfolio-16-1754289171674",
+    "id": "devfolio-14-1754375307632",
     "title": "MumbaiHacks 2025 - Round 1 (Online)",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -221,8 +195,8 @@
     "link": "https://mumbaihacks25-round1.devfolio.co/"
   },
   {
-    "id": "devfolio-17-1754289171675",
-    "title": "NexHack",
+    "id": "devfolio-15-1754375307632",
+    "title": "Invisible Garden #1",
     "desc": "Hackathon",
     "date": "Check website for dates",
     "mode": "Online",
@@ -231,10 +205,10 @@
       "Technology"
     ],
     "organiser": "Devfolio",
-    "link": "https://nexhack.devfolio.co/"
+    "link": "https://invisible-garden-2025.devfolio.co/"
   },
   {
-    "id": "devfolio-18-1754289171676",
+    "id": "devfolio-16-1754375307633",
     "title": "KodeKalesh 2025",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -247,7 +221,20 @@
     "link": "https://kodekalesh-2025.devfolio.co/"
   },
   {
-    "id": "devfolio-19-1754289171676",
+    "id": "devfolio-17-1754375307634",
+    "title": "NexHack",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://nexhack.devfolio.co/"
+  },
+  {
+    "id": "devfolio-18-1754375307642",
     "title": "BYTE\\_ RUSH",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -260,7 +247,7 @@
     "link": "https://byte-rush-1.devfolio.co/"
   },
   {
-    "id": "devfolio-20-1754289171677",
+    "id": "devfolio-19-1754375307643",
     "title": "HackOdisha 5.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -273,7 +260,7 @@
     "link": "https://hackodisha-4.devfolio.co/"
   },
   {
-    "id": "devfolio-21-1754289171677",
+    "id": "devfolio-20-1754375307643",
     "title": "Hack On Hills 7.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -286,33 +273,7 @@
     "link": "https://hackonhills7.devfolio.co/"
   },
   {
-    "id": "devfolio-22-1754289171678",
-    "title": "HACK <N> PITCH",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://hackandpitch.devfolio.co/"
-  },
-  {
-    "id": "devfolio-23-1754289171678",
-    "title": "OpenERA",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://openera.devfolio.co/"
-  },
-  {
-    "id": "devfolio-24-1754289171679",
+    "id": "devfolio-21-1754375307644",
     "title": "Hacktropica 2k26",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -325,7 +286,7 @@
     "link": "https://hacktropica2k26.devfolio.co/"
   },
   {
-    "id": "devfolio-25-1754289171679",
+    "id": "devfolio-22-1754375307644",
     "title": "Lisk Builders Challenge: Round Two",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -338,7 +299,7 @@
     "link": "https://lisk-builders-challenge-2.devfolio.co/"
   },
   {
-    "id": "devfolio-26-1754289171679",
+    "id": "devfolio-23-1754375307644",
     "title": "CODE reCET 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -351,7 +312,7 @@
     "link": "https://code-recet-2.devfolio.co/"
   },
   {
-    "id": "devfolio-27-1754289171680",
+    "id": "devfolio-24-1754375307645",
     "title": "Game of Life",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -364,7 +325,7 @@
     "link": "https://game-of-life.devfolio.co/"
   },
   {
-    "id": "devfolio-28-1754289171680",
+    "id": "devfolio-25-1754375307645",
     "title": "Girlathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
