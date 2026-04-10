@@ -1,15 +1,392 @@
 [
   {
-    "id": "placeholder",
-    "title": "Sample Hackathon",
-    "desc": "This is a placeholder entry because no hackathons were found during scraping.",
-    "date": "2026-04-09",
+    "id": "devfolio-0-1775805759225",
+    "title": "Base Batches 003: Student Track",
+    "desc": "Theme",
+    "date": "Check website for dates",
     "mode": "Online",
     "location": "India",
     "sectorTags": [
       "Technology"
     ],
-    "organiser": "System",
-    "link": "https://devfolio.co/hackathons"
+    "organiser": "Devfolio",
+    "link": "https://base-batches-student-track-3.devfolio.co/"
+  },
+  {
+    "id": "devfolio-1-1775805759226",
+    "title": "Push to Prod Hackathon with Genspark & Claude",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://push-to-prod.devfolio.co/"
+  },
+  {
+    "id": "devfolio-2-1775805759227",
+    "title": "Locus' Paygentic Hackathon - #1",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://paygentic-week1.devfolio.co/"
+  },
+  {
+    "id": "devfolio-3-1775805759228",
+    "title": "Base Batches 003: Student Track",
+    "desc": "Theme",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://base-batches-student-track-3.devfolio.co/"
+  },
+  {
+    "id": "devfolio-4-1775805759228",
+    "title": "Push to Prod Hackathon with Genspark & Claude",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://push-to-prod.devfolio.co/"
+  },
+  {
+    "id": "devfolio-5-1775805759229",
+    "title": "Locus' Paygentic Hackathon - #1",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://paygentic-week1.devfolio.co/"
+  },
+  {
+    "id": "devfolio-6-1775805759229",
+    "title": "[email protected]",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hackitbvp-2.devfolio.co/"
+  },
+  {
+    "id": "devfolio-7-1775805759230",
+    "title": "Hacktonix '26",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hacktonix-26.devfolio.co/"
+  },
+  {
+    "id": "devfolio-8-1775805759230",
+    "title": "Innovate-Iterate-Interrupt (III) 5.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://innovateiterateinterrupt-iii-5.devfolio.co/"
+  },
+  {
+    "id": "devfolio-9-1775805759231",
+    "title": "Push to Prod Hackathon with Genspark & Claude",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://push-to-prod.devfolio.co/"
+  },
+  {
+    "id": "devfolio-10-1775805759232",
+    "title": "BITBOX 6.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://bitbox6-0.devfolio.co/"
+  },
+  {
+    "id": "devfolio-11-1775805759234",
+    "title": "Hack-Helix",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hackhelix1.devfolio.co/"
+  },
+  {
+    "id": "devfolio-12-1775805759234",
+    "title": "Build Space",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://build-space.devfolio.co/"
+  },
+  {
+    "id": "devfolio-13-1775805759237",
+    "title": "Hack in GitHub DevDays",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hack-in-github-devdays.devfolio.co/"
+  },
+  {
+    "id": "devfolio-14-1775805759237",
+    "title": "Cepheus 2.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://cepheus-2.devfolio.co/"
+  },
+  {
+    "id": "devfolio-15-1775805759238",
+    "title": "DAYZERO 2.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://dayzero2o.devfolio.co/"
+  },
+  {
+    "id": "devfolio-16-1775805759238",
+    "title": "Build with Framework 1.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://framework.devfolio.co/"
+  },
+  {
+    "id": "devfolio-17-1775805759241",
+    "title": "Locus' Paygentic Hackathon - #1",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://paygentic-week1.devfolio.co/"
+  },
+  {
+    "id": "devfolio-18-1775805759242",
+    "title": "NMIT HACKS 2026",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://nmithacks26.devfolio.co/"
+  },
+  {
+    "id": "devfolio-19-1775805759242",
+    "title": "Susegad Sprint 2026",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://susegad-sprint.devfolio.co/"
+  },
+  {
+    "id": "devfolio-20-1775805759242",
+    "title": "HACK HUSTLE 2.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hack-hustle.devfolio.co/"
+  },
+  {
+    "id": "devfolio-21-1775805759244",
+    "title": "InOut2k26",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://inout2026.devfolio.co/"
+  },
+  {
+    "id": "devfolio-22-1775805759244",
+    "title": "Hack&Chill3.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hackandchill--3.devfolio.co/"
+  },
+  {
+    "id": "devfolio-23-1775805759244",
+    "title": "Rota-Tech X",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://rotatech-x.devfolio.co/"
+  },
+  {
+    "id": "devfolio-24-1775805759245",
+    "title": "Athernex",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://athernex.devfolio.co/"
+  },
+  {
+    "id": "devfolio-25-1775805759245",
+    "title": "Altaria",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://altaria.devfolio.co/"
+  },
+  {
+    "id": "devfolio-26-1775805759245",
+    "title": "Hack Storm 2.26",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hack-storm.devfolio.co/"
+  },
+  {
+    "id": "devfolio-27-1775805759246",
+    "title": "In-Out Hacks",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://inout-hacks.devfolio.co/"
+  },
+  {
+    "id": "devfolio-28-1775805759246",
+    "title": "Matrix 3",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://matrix-3.devfolio.co/"
+  },
+  {
+    "id": "devfolio-29-1775805759247",
+    "title": "Ctrl + Build",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://ctrl-build.devfolio.co/"
   }
 ]
