@@ -1,6 +1,6 @@
 [
   {
-    "id": "devfolio-0-1776324386604",
+    "id": "devfolio-0-1776410861700",
     "title": "Base Batches 003: Student Track",
     "desc": "Theme",
     "date": "Check website for dates",
@@ -13,7 +13,7 @@
     "link": "https://base-batches-student-track-3.devfolio.co/"
   },
   {
-    "id": "devfolio-1-1776324386605",
+    "id": "devfolio-1-1776410861701",
     "title": "Push to Prod Hackathon with Genspark & Claude",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -26,176 +26,7 @@
     "link": "https://push-to-prod.devfolio.co/"
   },
   {
-    "id": "devfolio-2-1776324386606",
-    "title": "Locus' Paygentic Hackathon - #1",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://paygentic-week1.devfolio.co/"
-  },
-  {
-    "id": "devfolio-3-1776324386606",
-    "title": "Base Batches 003: Student Track",
-    "desc": "Theme",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://base-batches-student-track-3.devfolio.co/"
-  },
-  {
-    "id": "devfolio-4-1776324386606",
-    "title": "Push to Prod Hackathon with Genspark & Claude",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://push-to-prod.devfolio.co/"
-  },
-  {
-    "id": "devfolio-5-1776324386607",
-    "title": "Locus' Paygentic Hackathon - #1",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://paygentic-week1.devfolio.co/"
-  },
-  {
-    "id": "devfolio-6-1776324386607",
-    "title": "Push to Prod Hackathon with Genspark & Claude",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://push-to-prod.devfolio.co/"
-  },
-  {
-    "id": "devfolio-7-1776324386607",
-    "title": "Cepheus 2.0",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://cepheus-2.devfolio.co/"
-  },
-  {
-    "id": "devfolio-8-1776324386607",
-    "title": "InOut2k26",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://inout2026.devfolio.co/"
-  },
-  {
-    "id": "devfolio-9-1776324386608",
-    "title": "Rota-Tech X",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://rotatech-x.devfolio.co/"
-  },
-  {
-    "id": "devfolio-10-1776324386608",
-    "title": "Hack&Chill3.0",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://hackandchill--3.devfolio.co/"
-  },
-  {
-    "id": "devfolio-11-1776324386608",
-    "title": "NMIT HACKS 2026",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://nmithacks26.devfolio.co/"
-  },
-  {
-    "id": "devfolio-12-1776324386609",
-    "title": "Athernex",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://athernex.devfolio.co/"
-  },
-  {
-    "id": "devfolio-13-1776324386609",
-    "title": "Altaria",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://altaria.devfolio.co/"
-  },
-  {
-    "id": "devfolio-14-1776324386609",
-    "title": "SCBC Hackathon 2026",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://scbc-hackathon.devfolio.co/"
-  },
-  {
-    "id": "devfolio-15-1776324386610",
+    "id": "devfolio-2-1776410861701",
     "title": "Locus' Paygentic Hackathon - #2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -208,33 +39,7 @@
     "link": "https://paygentic-week2.devfolio.co/"
   },
   {
-    "id": "devfolio-16-1776324386611",
-    "title": "Synchronicity S2.0",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://synchronicity-s-2.devfolio.co/"
-  },
-  {
-    "id": "devfolio-17-1776324386611",
-    "title": "Locus' Paygentic Hackathon - #3",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://paygentic-week3.devfolio.co/"
-  },
-  {
-    "id": "devfolio-18-1776324386612",
+    "id": "devfolio-3-1776410861702",
     "title": "Base Batches 003: Student Track",
     "desc": "Theme",
     "date": "Check website for dates",
@@ -247,8 +52,8 @@
     "link": "https://base-batches-student-track-3.devfolio.co/"
   },
   {
-    "id": "devfolio-19-1776324386612",
-    "title": "ETHPrague 2026",
+    "id": "devfolio-4-1776410861702",
+    "title": "Push to Prod Hackathon with Genspark & Claude",
     "desc": "Hackathon",
     "date": "Check website for dates",
     "mode": "Online",
@@ -257,11 +62,11 @@
       "Technology"
     ],
     "organiser": "Devfolio",
-    "link": "https://ethprague2026.devfolio.co/"
+    "link": "https://push-to-prod.devfolio.co/"
   },
   {
-    "id": "devfolio-20-1776324386613",
-    "title": "InnoFusion 3.0",
+    "id": "devfolio-5-1776410861703",
+    "title": "Locus' Paygentic Hackathon - #2",
     "desc": "Hackathon",
     "date": "Check website for dates",
     "mode": "Online",
@@ -270,11 +75,11 @@
       "Technology"
     ],
     "organiser": "Devfolio",
-    "link": "https://innofusion-3.devfolio.co/"
+    "link": "https://paygentic-week2.devfolio.co/"
   },
   {
-    "id": "devfolio-21-1776324386613",
-    "title": "Locus' Paygentic Hackathon - #4",
+    "id": "devfolio-6-1776410861703",
+    "title": "Push to Prod Hackathon with Genspark & Claude",
     "desc": "Hackathon",
     "date": "Check website for dates",
     "mode": "Online",
@@ -283,10 +88,101 @@
       "Technology"
     ],
     "organiser": "Devfolio",
-    "link": "https://paygentic-week4.devfolio.co/"
+    "link": "https://push-to-prod.devfolio.co/"
   },
   {
-    "id": "devfolio-22-1776324386613",
+    "id": "devfolio-7-1776410861703",
+    "title": "Cepheus 2.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://cepheus-2.devfolio.co/"
+  },
+  {
+    "id": "devfolio-8-1776410861704",
+    "title": "InOut2k26",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://inout2026.devfolio.co/"
+  },
+  {
+    "id": "devfolio-9-1776410861705",
+    "title": "Susegad Sprint 2026",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://susegad-sprint.devfolio.co/"
+  },
+  {
+    "id": "devfolio-10-1776410861705",
+    "title": "Rota-Tech X",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://rotatech-x.devfolio.co/"
+  },
+  {
+    "id": "devfolio-11-1776410861706",
+    "title": "Hack&Chill3.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hackandchill--3.devfolio.co/"
+  },
+  {
+    "id": "devfolio-12-1776410861706",
+    "title": "NMIT HACKS 2026",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://nmithacks26.devfolio.co/"
+  },
+  {
+    "id": "devfolio-13-1776410861707",
+    "title": "Altaria",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://altaria.devfolio.co/"
+  },
+  {
+    "id": "devfolio-14-1776410861707",
     "title": "INNOVATEX 1.O",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -299,7 +195,124 @@
     "link": "https://innovatex-gsamakaut.devfolio.co/"
   },
   {
-    "id": "devfolio-23-1776324386613",
+    "id": "devfolio-15-1776410861708",
+    "title": "Athernex",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://athernex.devfolio.co/"
+  },
+  {
+    "id": "devfolio-16-1776410861708",
+    "title": "SCBC Hackathon 2026",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://scbc-hackathon.devfolio.co/"
+  },
+  {
+    "id": "devfolio-17-1776410861709",
+    "title": "Locus' Paygentic Hackathon - #2",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://paygentic-week2.devfolio.co/"
+  },
+  {
+    "id": "devfolio-18-1776410861711",
+    "title": "Synchronicity S2.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://synchronicity-s-2.devfolio.co/"
+  },
+  {
+    "id": "devfolio-19-1776410861711",
+    "title": "Base Batches 003: Student Track",
+    "desc": "Theme",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://base-batches-student-track-3.devfolio.co/"
+  },
+  {
+    "id": "devfolio-20-1776410861711",
+    "title": "Locus' Paygentic Hackathon - #3",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://paygentic-week3.devfolio.co/"
+  },
+  {
+    "id": "devfolio-21-1776410861712",
+    "title": "ETHPrague 2026",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://ethprague2026.devfolio.co/"
+  },
+  {
+    "id": "devfolio-22-1776410861712",
+    "title": "InnoFusion 3.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://innofusion-3.devfolio.co/"
+  },
+  {
+    "id": "devfolio-23-1776410861712",
+    "title": "Locus' Paygentic Hackathon - #4",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://paygentic-week4.devfolio.co/"
+  },
+  {
+    "id": "devfolio-24-1776410861712",
     "title": "HackPrix Season 3",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -312,7 +325,7 @@
     "link": "https://hackprix-2026.devfolio.co/"
   },
   {
-    "id": "devfolio-24-1776324386613",
+    "id": "devfolio-25-1776410861713",
     "title": "Rentits Global Hackathon 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -325,8 +338,8 @@
     "link": "https://hackrent.devfolio.co/"
   },
   {
-    "id": "devfolio-25-1776324386614",
-    "title": "RNS Hack_Overflow 2.0",
+    "id": "devfolio-26-1776410861713",
+    "title": "Locus' Paygentic Hackathon - #1",
     "desc": "Hackathon",
     "date": "Check website for dates",
     "mode": "Online",
@@ -335,10 +348,10 @@
       "Technology"
     ],
     "organiser": "Devfolio",
-    "link": "https://rns-hackoverflow-2.devfolio.co/"
+    "link": "https://paygentic-week1.devfolio.co/"
   },
   {
-    "id": "devfolio-26-1776324386614",
+    "id": "devfolio-27-1776410861713",
     "title": "Innovate-Iterate-Interrupt (III) 5.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -351,7 +364,7 @@
     "link": "https://innovateiterateinterrupt-iii-5.devfolio.co/"
   },
   {
-    "id": "devfolio-27-1776324386614",
+    "id": "devfolio-28-1776410861713",
     "title": "SemiXthon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -364,7 +377,7 @@
     "link": "https://semicon-semixthon.devfolio.co/"
   },
   {
-    "id": "devfolio-28-1776324386614",
+    "id": "devfolio-29-1776410861714",
     "title": "DropoutHacks",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -375,18 +388,5 @@
     ],
     "organiser": "Devfolio",
     "link": "https://dropouthacks.devfolio.co/"
-  },
-  {
-    "id": "devfolio-29-1776324386615",
-    "title": "KJSSE GajShield Hack X",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://hack-x.devfolio.co/"
   }
 ]
