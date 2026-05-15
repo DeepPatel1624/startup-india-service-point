@@ -1,6 +1,6 @@
 [
   {
-    "id": "devfolio-0-1778747576571",
+    "id": "devfolio-0-1778834682595",
     "title": "Locus' Paygentic Hackathon - #4",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -13,20 +13,7 @@
     "link": "https://paygentic-week4.devfolio.co/"
   },
   {
-    "id": "devfolio-1-1778747576573",
-    "title": "Synchronicity S2.0",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://synchronicity-s-2.devfolio.co/"
-  },
-  {
-    "id": "devfolio-2-1778747576574",
+    "id": "devfolio-1-1778834682596",
     "title": "InnoFusion 3.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -39,7 +26,7 @@
     "link": "https://innofusion-3.devfolio.co/"
   },
   {
-    "id": "devfolio-3-1778747576575",
+    "id": "devfolio-2-1778834682597",
     "title": "Locus' Paygentic Hackathon - #4",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -52,7 +39,7 @@
     "link": "https://paygentic-week4.devfolio.co/"
   },
   {
-    "id": "devfolio-4-1778747576575",
+    "id": "devfolio-3-1778834682597",
     "title": "HackPrix Season 3",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -65,7 +52,7 @@
     "link": "https://hackprix-2026.devfolio.co/"
   },
   {
-    "id": "devfolio-5-1778747576576",
+    "id": "devfolio-4-1778834682598",
     "title": "DeerHack 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -78,7 +65,7 @@
     "link": "https://deerhack26.devfolio.co/"
   },
   {
-    "id": "devfolio-6-1778747576577",
+    "id": "devfolio-5-1778834682598",
     "title": "HexaFalls 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -91,7 +78,7 @@
     "link": "https://hexafalls2.devfolio.co/"
   },
   {
-    "id": "devfolio-7-1778747576577",
+    "id": "devfolio-6-1778834682599",
     "title": "ccuhacks",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -104,7 +91,7 @@
     "link": "https://ccuhacks.devfolio.co/"
   },
   {
-    "id": "devfolio-8-1778747576578",
+    "id": "devfolio-7-1778834682599",
     "title": "Rentits Global Hackathon 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -117,7 +104,7 @@
     "link": "https://hackrent.devfolio.co/"
   },
   {
-    "id": "devfolio-9-1778747576587",
+    "id": "devfolio-8-1778834682600",
     "title": "Citadel Hackathon - Season 1",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -130,7 +117,7 @@
     "link": "https://citadel-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-10-1778747576588",
+    "id": "devfolio-9-1778834682600",
     "title": "RNS Hack_Overflow 2.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -143,7 +130,20 @@
     "link": "https://rns-hackoverflow-2.devfolio.co/"
   },
   {
-    "id": "devfolio-11-1778747576590",
+    "id": "devfolio-10-1778834682608",
+    "title": "Hack4Brahma 2.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://hack4brahma2.devfolio.co/"
+  },
+  {
+    "id": "devfolio-11-1778834682609",
     "title": "INNOVATEX 1.O",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -156,7 +156,7 @@
     "link": "https://innovatex-gsamakaut.devfolio.co/"
   },
   {
-    "id": "devfolio-12-1778747576591",
+    "id": "devfolio-12-1778834682610",
     "title": "ETHPrague 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -169,7 +169,7 @@
     "link": "https://ethprague2026.devfolio.co/"
   },
   {
-    "id": "devfolio-13-1778747576593",
+    "id": "devfolio-13-1778834682612",
     "title": "NMIT HACKS 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -182,7 +182,7 @@
     "link": "https://nmithacks26.devfolio.co/"
   },
   {
-    "id": "devfolio-14-1778747576593",
+    "id": "devfolio-14-1778834682612",
     "title": "Hackolution 2K26",
     "desc": "Hackathon",
     "date": "Check website for dates",
