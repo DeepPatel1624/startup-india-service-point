@@ -1,18 +1,9 @@
 {
-  "totalScrapes": 410,
-  "lastScrapeTime": "2026-06-13T08:52:44.258Z",
-  "successfulScrapes": 410,
+  "totalScrapes": 411,
+  "lastScrapeTime": "2026-06-14T09:27:57.939Z",
+  "successfulScrapes": 411,
   "failedScrapes": 0,
   "hackathonsCounts": [
-    {
-      "timestamp": "2026-03-05T06:45:37.006Z",
-      "count": 1,
-      "sources": {
-        "devfolio": 0,
-        "devpost": 0,
-        "placeholder": 1
-      }
-    },
     {
       "timestamp": "2026-03-06T06:41:47.907Z",
       "count": 1,
@@ -900,6 +891,15 @@
       "count": 16,
       "sources": {
         "devfolio": 16,
+        "devpost": 0,
+        "placeholder": 0
+      }
+    },
+    {
+      "timestamp": "2026-06-14T09:27:57.939Z",
+      "count": 15,
+      "sources": {
+        "devfolio": 15,
         "devpost": 0,
         "placeholder": 0
       }
