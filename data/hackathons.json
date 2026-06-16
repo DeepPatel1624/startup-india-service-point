@@ -1,6 +1,6 @@
 [
   {
-    "id": "devfolio-0-1781524574642",
+    "id": "devfolio-0-1781607844191",
     "title": "ccuhacks",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -13,7 +13,7 @@
     "link": "https://ccuhacks.devfolio.co/"
   },
   {
-    "id": "devfolio-1-1781524574643",
+    "id": "devfolio-1-1781607844192",
     "title": "CodeStorm 2026 #2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -26,7 +26,7 @@
     "link": "https://codestorm-week2-2026.devfolio.co/"
   },
   {
-    "id": "devfolio-2-1781524574643",
+    "id": "devfolio-2-1781607844193",
     "title": "Girlathon 4.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -39,7 +39,20 @@
     "link": "https://girlathon26.devfolio.co/"
   },
   {
-    "id": "devfolio-3-1781524574644",
+    "id": "devfolio-3-1781607844193",
+    "title": "MicroCraft - Vibeathon",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://microcraft-vibeathon.devfolio.co/"
+  },
+  {
+    "id": "devfolio-4-1781607844194",
     "title": "SheBuilds Chennai Hack",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -52,7 +65,7 @@
     "link": "https://shebuilds-chennai-hack.devfolio.co/"
   },
   {
-    "id": "devfolio-4-1781524574644",
+    "id": "devfolio-5-1781607844194",
     "title": "Citadel Hackathon - Season 1",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -65,7 +78,7 @@
     "link": "https://citadel-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-5-1781524574644",
+    "id": "devfolio-6-1781607844195",
     "title": "HexaFalls 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -78,7 +91,7 @@
     "link": "https://hexafalls2.devfolio.co/"
   },
   {
-    "id": "devfolio-6-1781524574645",
+    "id": "devfolio-7-1781607844196",
     "title": "DSU DEVHACK 3.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -91,7 +104,7 @@
     "link": "https://dsudevhack3.devfolio.co/"
   },
   {
-    "id": "devfolio-7-1781524574646",
+    "id": "devfolio-8-1781607844197",
     "title": "HackNex Season 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -104,7 +117,7 @@
     "link": "https://hacknex-season-2.devfolio.co/"
   },
   {
-    "id": "devfolio-8-1781524574647",
+    "id": "devfolio-9-1781607844197",
     "title": "HACKER HOUSE GOA 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -117,7 +130,7 @@
     "link": "https://hacker-house-goa-2026.devfolio.co/"
   },
   {
-    "id": "devfolio-9-1781524574647",
+    "id": "devfolio-10-1781607844198",
     "title": "Hack On Hills 8.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -130,7 +143,7 @@
     "link": "https://hackonhills8.devfolio.co/"
   },
   {
-    "id": "devfolio-10-1781524574647",
+    "id": "devfolio-11-1781607844198",
     "title": "HackTopus'FE",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -143,7 +156,7 @@
     "link": "https://hacktopusgdg.devfolio.co/"
   },
   {
-    "id": "devfolio-11-1781524574648",
+    "id": "devfolio-12-1781607844199",
     "title": "HackGenome",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -156,7 +169,7 @@
     "link": "https://hackgenome2026.devfolio.co/"
   },
   {
-    "id": "devfolio-12-1781524574648",
+    "id": "devfolio-13-1781607844199",
     "title": "HackPrix Season 3",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -169,7 +182,7 @@
     "link": "https://hackprix-2026.devfolio.co/"
   },
   {
-    "id": "devfolio-13-1781524574649",
+    "id": "devfolio-14-1781607844200",
     "title": "MicroCraft - ArcNight",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -182,7 +195,7 @@
     "link": "https://microcarft-arcnight.devfolio.co/"
   },
   {
-    "id": "devfolio-14-1781524574650",
+    "id": "devfolio-15-1781607844201",
     "title": "DeerHack 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
