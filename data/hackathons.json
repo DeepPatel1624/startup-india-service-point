@@ -1,6 +1,6 @@
 [
   {
-    "id": "devfolio-0-1782207127563",
+    "id": "devfolio-0-1782292873059",
     "title": "Girlathon 4.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -13,7 +13,7 @@
     "link": "https://girlathon26.devfolio.co/"
   },
   {
-    "id": "devfolio-1-1782207127565",
+    "id": "devfolio-1-1782292873060",
     "title": "CodeStorm 2026 #2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -26,7 +26,7 @@
     "link": "https://codestorm-week2-2026.devfolio.co/"
   },
   {
-    "id": "devfolio-2-1782207127565",
+    "id": "devfolio-2-1782292873061",
     "title": "MicroCraft - Vibeathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -39,7 +39,7 @@
     "link": "https://microcraft-vibeathon.devfolio.co/"
   },
   {
-    "id": "devfolio-3-1782207127566",
+    "id": "devfolio-3-1782292873061",
     "title": "SheBuilds Chennai Hack",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -52,7 +52,7 @@
     "link": "https://shebuilds-chennai-hack.devfolio.co/"
   },
   {
-    "id": "devfolio-4-1782207127566",
+    "id": "devfolio-4-1782292873062",
     "title": "Citadel Hackathon - Season 1",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -65,7 +65,7 @@
     "link": "https://citadel-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-5-1782207127567",
+    "id": "devfolio-5-1782292873062",
     "title": "FlutterFlow Champions League Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -78,7 +78,7 @@
     "link": "https://flutterflow-champions-league-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-6-1782207127567",
+    "id": "devfolio-6-1782292873063",
     "title": "HexaFalls 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -91,7 +91,7 @@
     "link": "https://hexafalls2.devfolio.co/"
   },
   {
-    "id": "devfolio-7-1782207127567",
+    "id": "devfolio-7-1782292873063",
     "title": "FutureForge Hackathon 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -104,7 +104,7 @@
     "link": "https://futureforge-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-8-1782207127568",
+    "id": "devfolio-8-1782292873064",
     "title": "Ignisys 1.O",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -117,7 +117,7 @@
     "link": "https://ignisys-ignitia.devfolio.co/"
   },
   {
-    "id": "devfolio-9-1782207127568",
+    "id": "devfolio-9-1782292873064",
     "title": "DSU DEVHACK 3.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -130,7 +130,7 @@
     "link": "https://dsudevhack3.devfolio.co/"
   },
   {
-    "id": "devfolio-10-1782207127569",
+    "id": "devfolio-10-1782292873065",
     "title": "HackNex Season 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -143,7 +143,7 @@
     "link": "https://hacknex-season-2.devfolio.co/"
   },
   {
-    "id": "devfolio-11-1782207127569",
+    "id": "devfolio-11-1782292873065",
     "title": "CodeStorm 2026: FutureForge",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -156,7 +156,7 @@
     "link": "https://codestorm-futureforge.devfolio.co/"
   },
   {
-    "id": "devfolio-12-1782207127570",
+    "id": "devfolio-12-1782292873066",
     "title": "HACKER HOUSE GOA 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -169,7 +169,7 @@
     "link": "https://hacker-house-goa-2026.devfolio.co/"
   },
   {
-    "id": "devfolio-13-1782207127571",
+    "id": "devfolio-13-1782292873066",
     "title": "Hack On Hills 8.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -182,7 +182,7 @@
     "link": "https://hackonhills8.devfolio.co/"
   },
   {
-    "id": "devfolio-14-1782207127572",
+    "id": "devfolio-14-1782292873067",
     "title": "HackTopus'FE",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -195,7 +195,7 @@
     "link": "https://hacktopusgdg.devfolio.co/"
   },
   {
-    "id": "devfolio-15-1782207127572",
+    "id": "devfolio-15-1782292873068",
     "title": "Hackify 3.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -208,7 +208,20 @@
     "link": "https://hackify-3.devfolio.co/"
   },
   {
-    "id": "devfolio-16-1782207127573",
+    "id": "devfolio-16-1782292873068",
+    "title": "Tech Genesis '26",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://tech-genesis.devfolio.co/"
+  },
+  {
+    "id": "devfolio-17-1782292873068",
     "title": "ccuhacks",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -221,7 +234,7 @@
     "link": "https://ccuhacks.devfolio.co/"
   },
   {
-    "id": "devfolio-17-1782207127573",
+    "id": "devfolio-18-1782292873069",
     "title": "Devlynix Buildathon 2.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -234,7 +247,7 @@
     "link": "https://devlynix-buildathon-1.devfolio.co/"
   },
   {
-    "id": "devfolio-18-1782207127574",
+    "id": "devfolio-19-1782292873069",
     "title": "HackGenome",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -247,7 +260,7 @@
     "link": "https://hackgenome2026.devfolio.co/"
   },
   {
-    "id": "devfolio-19-1782207127575",
+    "id": "devfolio-20-1782292873070",
     "title": "HackPrix Season 3",
     "desc": "Hackathon",
     "date": "Check website for dates",
