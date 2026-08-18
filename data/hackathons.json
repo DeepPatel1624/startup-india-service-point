@@ -1,6 +1,6 @@
 [
   {
-    "id": "devfolio-0-1786949078631",
+    "id": "devfolio-0-1787034925239",
     "title": "Push to Prod Hackathon: Building at the Frontier",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -13,46 +13,7 @@
     "link": "https://pushtoprod-india.devfolio.co/"
   },
   {
-    "id": "devfolio-1-1786949078633",
-    "title": "VYNORAE",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://vynorae.devfolio.co/"
-  },
-  {
-    "id": "devfolio-2-1786949078633",
-    "title": "Dora Hack 2.0",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://dora-hack.devfolio.co/"
-  },
-  {
-    "id": "devfolio-3-1786949078634",
-    "title": "FusioniX2026",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://fusionix-1.devfolio.co/"
-  },
-  {
-    "id": "devfolio-4-1786949078635",
+    "id": "devfolio-1-1787034925241",
     "title": "HyperFusion",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -65,7 +26,7 @@
     "link": "https://hyperfusion.devfolio.co/"
   },
   {
-    "id": "devfolio-5-1786949078635",
+    "id": "devfolio-2-1787034925241",
     "title": "CodeWars1.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -78,7 +39,7 @@
     "link": "https://codewars-2.devfolio.co/"
   },
   {
-    "id": "devfolio-6-1786949078635",
+    "id": "devfolio-3-1787034925242",
     "title": "RevengersHack",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -91,7 +52,20 @@
     "link": "https://revengershack.devfolio.co/"
   },
   {
-    "id": "devfolio-7-1786949078636",
+    "id": "devfolio-4-1787034925243",
+    "title": "Dora Hack 2.0",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://dora-hack.devfolio.co/"
+  },
+  {
+    "id": "devfolio-5-1787034925243",
     "title": "Road to Devcon - NITK Surathkal",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -104,20 +78,7 @@
     "link": "https://road-to-devcon-nitk-surathkal.devfolio.co/"
   },
   {
-    "id": "devfolio-8-1786949078636",
-    "title": "Recursion Edition II",
-    "desc": "Hackathon",
-    "date": "Check website for dates",
-    "mode": "Online",
-    "location": "India",
-    "sectorTags": [
-      "Technology"
-    ],
-    "organiser": "Devfolio",
-    "link": "https://recursion-edition.devfolio.co/"
-  },
-  {
-    "id": "devfolio-9-1786949078637",
+    "id": "devfolio-6-1787034925244",
     "title": "VENTURE'26",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -130,7 +91,7 @@
     "link": "https://venture-26.devfolio.co/"
   },
   {
-    "id": "devfolio-10-1786949078637",
+    "id": "devfolio-7-1787034925244",
     "title": "Hefty-Hacks",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -143,7 +104,7 @@
     "link": "https://hefty-hacks.devfolio.co/"
   },
   {
-    "id": "devfolio-11-1786949078638",
+    "id": "devfolio-8-1787034925245",
     "title": "HackNex Season 2",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -156,7 +117,7 @@
     "link": "https://hacknex-season-2.devfolio.co/"
   },
   {
-    "id": "devfolio-12-1786949078639",
+    "id": "devfolio-9-1787034925245",
     "title": "HackInverse 1.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -169,7 +130,20 @@
     "link": "https://hackinverse-s1.devfolio.co/"
   },
   {
-    "id": "devfolio-13-1786949078639",
+    "id": "devfolio-10-1787034925246",
+    "title": "FusioniX2026",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://fusionix-1.devfolio.co/"
+  },
+  {
+    "id": "devfolio-11-1787034925247",
     "title": "The Great Agent Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -182,7 +156,20 @@
     "link": "https://the-great-agent-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-14-1786949078639",
+    "id": "devfolio-12-1787034925247",
+    "title": "Recursion Edition II",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://recursion-edition.devfolio.co/"
+  },
+  {
+    "id": "devfolio-13-1787034925248",
     "title": "CodeStorm 2026: FutureForge",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -195,7 +182,7 @@
     "link": "https://codestorm-futureforge.devfolio.co/"
   },
   {
-    "id": "devfolio-15-1786949078640",
+    "id": "devfolio-14-1787034925248",
     "title": "ETHKochi",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -208,7 +195,7 @@
     "link": "https://ethkochi.devfolio.co/"
   },
   {
-    "id": "devfolio-16-1786949078641",
+    "id": "devfolio-15-1787034925249",
     "title": "MUBA Blockchain Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -221,7 +208,7 @@
     "link": "https://muba-hackathon.devfolio.co/"
   },
   {
-    "id": "devfolio-17-1786949078641",
+    "id": "devfolio-16-1787034925249",
     "title": "Metamorph 2.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -234,7 +221,7 @@
     "link": "https://metamorph-2.devfolio.co/"
   },
   {
-    "id": "devfolio-18-1786949078642",
+    "id": "devfolio-17-1787034925250",
     "title": "HackVerse: Into the Web",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -247,7 +234,7 @@
     "link": "https://hackverse-into-the-web.devfolio.co/"
   },
   {
-    "id": "devfolio-19-1786949078642",
+    "id": "devfolio-18-1787034925250",
     "title": "HackSpire'26",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -260,7 +247,7 @@
     "link": "https://hackspire26.devfolio.co/"
   },
   {
-    "id": "devfolio-20-1786949078643",
+    "id": "devfolio-19-1787034925251",
     "title": "DOMINION 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -273,7 +260,20 @@
     "link": "https://dominion2026.devfolio.co/"
   },
   {
-    "id": "devfolio-21-1786949078643",
+    "id": "devfolio-20-1787034925251",
+    "title": "WebCraft24",
+    "desc": "Hackathon",
+    "date": "Check website for dates",
+    "mode": "Online",
+    "location": "India",
+    "sectorTags": [
+      "Technology"
+    ],
+    "organiser": "Devfolio",
+    "link": "https://webcraft24.devfolio.co/"
+  },
+  {
+    "id": "devfolio-21-1787034925252",
     "title": "HackTopus'FE",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -286,7 +286,7 @@
     "link": "https://hacktopusgdg.devfolio.co/"
   },
   {
-    "id": "devfolio-22-1786949078643",
+    "id": "devfolio-22-1787034925252",
     "title": "Convergence",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -299,7 +299,7 @@
     "link": "https://convergence1.devfolio.co/"
   },
   {
-    "id": "devfolio-23-1786949078643",
+    "id": "devfolio-23-1787034925252",
     "title": "Hackify 3.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -312,7 +312,7 @@
     "link": "https://hackify-3.devfolio.co/"
   },
   {
-    "id": "devfolio-24-1786949078644",
+    "id": "devfolio-24-1787034925253",
     "title": "Innohacks 4.0",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -325,7 +325,7 @@
     "link": "https://innohacks-4.devfolio.co/"
   },
   {
-    "id": "devfolio-25-1786949078644",
+    "id": "devfolio-25-1787034925253",
     "title": "Infinity Hacks 2026",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -338,7 +338,7 @@
     "link": "https://infinity-hacks.devfolio.co/"
   },
   {
-    "id": "devfolio-26-1786949078644",
+    "id": "devfolio-26-1787034925253",
     "title": "Road To Devcon",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -351,7 +351,7 @@
     "link": "https://road-to-devcon-iitr.devfolio.co/"
   },
   {
-    "id": "devfolio-27-1786949078645",
+    "id": "devfolio-27-1787034925254",
     "title": "Push to Prod Hackathon: Building at the Frontier",
     "desc": "Hackathon",
     "date": "Check website for dates",
@@ -364,7 +364,7 @@
     "link": "https://pushtoprod-india.devfolio.co/"
   },
   {
-    "id": "devfolio-28-1786949078645",
+    "id": "devfolio-28-1787034925254",
     "title": "Buildora Hackathon",
     "desc": "Hackathon",
     "date": "Check website for dates",
